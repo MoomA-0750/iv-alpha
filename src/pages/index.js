@@ -1,4 +1,4 @@
-import { MenuBar } from '@/components/MenuBar'
+import { MenuBar } from '@/components/MenuBar/MenuBar'
 import Head from 'next/head'
 
 export default function Home() {
