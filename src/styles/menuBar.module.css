@@ -43,7 +43,7 @@
     border-radius: 5px 28px 28px 5px;
 }
 
-.label {
+.menuBarBody .label {
     display: flex;
     padding: 0px 12px;
     flex-direction: column;
@@ -89,8 +89,17 @@
 .contextMenu {
     display: flex;
     margin: 4px 0;
+    padding: 0 6px;
     align-items: center;
     gap: 6px;
     align-self: stretch;
     border-radius: 34px;
+}
+
+.contextMenu .label * {
+    color: red;
+}
+
+.menuBarBody .label * {
+    color: blue;
 }
