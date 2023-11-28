@@ -10,14 +10,14 @@ const MenuBarBody = styled.div`
     margin: 15px;
     justify-content: space-between;
     align-items: center;
-`;
+`
 
 const Left = styled.div`
     display: flex;
     align-items: center;
     gap: 10px;
     align-self: stretch;
-`;
+`
 
 const NavButtons = styled.div`
     display: flex;
@@ -26,7 +26,7 @@ const NavButtons = styled.div`
     gap: 6px;
     align-self: stretch;
     border-radius: 34px;
-`;
+`
 
 const Back = styled.div`
     display: flex;
@@ -36,7 +36,7 @@ const Back = styled.div`
     gap: 10px;
     align-self: stretch;
     border-radius: 28px 5px 5px 28px;
-`;
+`
 
 const Home = styled.div`
     display: flex;
@@ -46,7 +46,7 @@ const Home = styled.div`
     gap: 10px;
     align-self: stretch;
     border-radius: 5px 28px 28px 5px;
-`;
+`
 
 const Label = styled.div`
     display: flex;
@@ -98,27 +98,39 @@ export function MenuBar(props) {
     const [date, setDate] = useState("XX/XX (曜)");
 
     useEffect(() => {
-        /* 省略 */
+        const intervalId = setInterval(() => {
+            const now = new Date();
+            const month = (now.getMonth() + 1).toString().padStart(2, '0');
+            const day = now.getDate().toString().padStart(2, '0');
+            const hours = now.getHours().toString().padStart(2, '0');
+            const minutes = now.getMinutes().toString().padStart(2, '0');
+            const dayOfWeek = ['日', '月', '火', '水', '木', '金', '土'][now.getDay()];
+            setTime(hours + ':' + minutes);
+            setDate(month + '/' + day + ' (' + dayOfWeek + ')');
+        }, 1000); // 1秒ごとに更新
+
+        // コンポーネントのクリーンアップ時にintervalをクリアする
+        return () => clearInterval(intervalId);
     }, []);
 
     return (
         <MenuBarBody>
             <Left>
-                <NavButtons>
-                    <Back><SVG_arrow_left_12 size={20} /></Back>
-                    <Home><SVG_home_12 size={20} /></Home>
-                    <Label>
-                        <SubTitle>アーカイブ</SubTitle>
-                        <Title>Long Naaaaame</Title>
+                <NavButtons className='bC-BGSub e-Box'>
+                    <Back className='bC-BG e-Button'><SVG_arrow_left_12 size={20} /></Back>
+                    <Home className='bC-BG e-Button'><SVG_home_12 size={20} /></Home>
+                    <Label className='bC-BG'>
+                        <SubTitle className='t-SubText-Normal tC-TextSub'>アーカイブ</SubTitle>
+                        <Title className='t-Text-Bolder tC-Text'>Long Naaaaame</Title>
                     </Label>
                 </NavButtons>
                 <MbContextMenu/>
             </Left>
-            <Right>
-                <Status>
+            <Right className='bC-BGSub e-Box'>
+                <Status className='bC-BG e-Button'>
                     <CaleTime>
-                        <Title>{time}</Title>
-                        <SubTitle>{date}</SubTitle>
+                        <Title className='t-Text-Bolder tC-Text'>{time}</Title>
+                        <SubTitle className='t-SubText-Normal tC-TextSub'>{date}</SubTitle>
                     </CaleTime>
                 </Status>
             </Right>

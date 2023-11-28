@@ -19,7 +19,7 @@ import styles from '@/styles/menuBar.module.css';
 export function MbContextMenu() {
     return (
         <div className={styles.contextMenu + ' bC-BGSub e-Box'}>
-            <div className={styles.label + ' bC-BG'}>
+            <div className={styles.label}>
                 <div className='t-SubText2-Normal tC-TextSub'>asdf</div>
             </div>
             <div className='bC-BG e-Button'><SVG_home_12 size={20} /></div>
