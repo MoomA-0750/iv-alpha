@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components'
+import { SVG_Media_Pause, SVG_Media_Forward } from '../IconPack';
 
 const MediaControl = styled.div`
     display: flex;
-    padding: 0px 12px;
+    padding: 0px 8px 0 12px;
     justify-content: flex-end;
     align-items: center;
     gap: 6px;
@@ -19,11 +20,30 @@ const MediaInfo = styled.div`
 `
 
 const SubTitle = styled.div`
-    /* ここにsubTitleのCSSを記述 */
 `
 
 const Title = styled.div`
-    /* ここにtitleのCSSを記述 */
+`
+
+const Artwork = styled.div`
+`
+
+const Buttons = styled.div`
+    display: flex;
+    align-items: center;
+    gap: 6px;
+`
+
+const Back = styled.div`
+    border-radius: 30px;
+`
+
+const PlayPause = styled.div`
+    border-radius: 30px;
+`
+
+const Forward = styled.div`
+    border-radius: 30px;
 `
 
 export function MbMediaControl() {
@@ -33,6 +53,14 @@ export function MbMediaControl() {
                 <Title className='t-Text-Bolder tC-Text'>Media Title</Title>
                 <SubTitle className='t-SubText-Normal tC-TextSub'>Artists</SubTitle>
             </MediaInfo>
+            <Artwork>
+                {/* <img src='@/DummyAssets/Screenshot 2023-11-29 123542.png'></img> */}
+            </Artwork>
+            <Buttons>
+                <Back className='bC-BG e-Button'>a</Back>
+                <PlayPause className='bC-BG e-Button'><SVG_Media_Pause/></PlayPause>
+                <Forward className='bC-BG e-Button'></Forward>
+            </Buttons>
         </MediaControl>
     )
 }
