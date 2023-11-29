@@ -1,28 +1,43 @@
 import React, { useState, useEffect } from 'react';
-// import styled from 'styled-components'
-import { SVG_arrow_left_12, SVG_home_12 } from '../IconPack'
-import styles from '@/styles/menuBar.module.css';
+import styled from 'styled-components'
 
-// export function MbContextMenu() {
-//     return (
-//         <div className={styles.contextMenu + ' bC-BGSub e-Box'}>
-//             <div className={styles.back + ' bC-BG e-Button'}><SVG_arrow_left_12 size={20} /></div>
-//             <div className={styles.home + ' bC-BG e-Button'}><SVG_home_12 size={20} /></div>
-//             <div className={styles.label + ' bC-BG'}>
-//                 <div className={styles.subTitle + ' t-SubText-Normal tC-TextSub'}>アーカイブ</div>
-//                 <div className={styles.title + ' t-Text-Bolder tC-Text'}>Long Naaaaame</div>
-//             </div>
-//         </div>
-//     )
-// }
+const ContextMenu = styled.div`
+    display: flex;
+    margin: 4px 0;
+    padding: 0 6px;
+    align-items: center;
+    align-self: stretch;
+    border-radius: 34px;
+`
+
+const Label = styled.div`
+padding: 0 6px;
+`
+
+const Context = styled.div`
+padding: 0 14px;
+display: flex;
+height: 50px;
+padding: var(--Stick-Left, 0px) 14px;
+
+justify-content: center;
+align-items: center;
+gap: var(--Stick-Left, 0px);
+border-radius: 50px;
+`
 
 export function MbContextMenu() {
     return (
-        <div className={styles.contextMenu + ' bC-BGSub e-Box'}>
-            <div className={styles.label}>
-                <div className='t-SubText2-Normal tC-TextSub'>asdf</div>
-            </div>
-            <div className='bC-BG e-Button'><SVG_home_12 size={20} /></div>
-        </div>
+        <ContextMenu className='bC-BGSub e-Box'>
+            <Label>
+                <div className='t-SubText2-Normal tC-TextSub'>表示方法</div>
+            </Label>
+            <Context className='bC-BG e-Box'>トップ</Context>
+            <Context>ギャラリー</Context>
+            <Context>メンバー</Context>
+            <Context>イベント</Context>
+            <Context>リリース</Context>
+            <Context>ログ</Context>
+        </ContextMenu>
     )
 }

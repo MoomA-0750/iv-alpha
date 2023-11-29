@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import { SVG_arrow_left_12, SVG_home_12 } from '../IconPack';
 import { MbContextMenu } from './ContextMenu.js';
+import { MbMediaControl } from './MediaControl';
 
 const MenuBarBody = styled.div`
     display: flex;
@@ -68,6 +69,7 @@ const Title = styled.div`
 
 const Right = styled.div`
     display: flex;
+    flex-direction: row-reverse;
     padding: 4px;
     justify-content: flex-end;
     align-items: center;
@@ -124,7 +126,7 @@ export function MenuBar(props) {
                         <Title className='t-Text-Bolder tC-Text'>Long Naaaaame</Title>
                     </Label>
                 </NavButtons>
-                <MbContextMenu/>
+                {/* <MbContextMenu/> */}
             </Left>
             <Right className='bC-BGSub e-Box'>
                 <Status className='bC-BG e-Button'>
@@ -133,6 +135,7 @@ export function MenuBar(props) {
                         <SubTitle className='t-SubText-Normal tC-TextSub'>{date}</SubTitle>
                     </CaleTime>
                 </Status>
+                <MbMediaControl/>
             </Right>
         </MenuBarBody>
     )
