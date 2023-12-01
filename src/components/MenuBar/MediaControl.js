@@ -1,4 +1,3 @@
-import React, { useState, useEffect } from 'react';
 import styled from 'styled-components'
 import { SVG_Media_Pause, SVG_Media_Forward } from '../IconPack';
 
@@ -39,10 +38,21 @@ const Back = styled.div`
 `
 
 const PlayPause = styled.div`
+display: flex;
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
     border-radius: 30px;
 `
 
 const Forward = styled.div`
+    width: 26px;
+    height: 26px;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
     border-radius: 30px;
 `
 
@@ -58,8 +68,8 @@ export function MbMediaControl() {
             </Artwork>
             <Buttons>
                 <Back className='bC-BG e-Button'>a</Back>
-                <PlayPause className='bC-BG e-Button'><SVG_Media_Pause/></PlayPause>
-                <Forward className='bC-BG e-Button'></Forward>
+                <PlayPause className='bC-BG e-Button'><SVG_Media_Pause size={14.5}/></PlayPause>
+                <Forward className='bC-BG e-Button'><SVG_Media_Forward size={9.75}/></Forward>
             </Buttons>
         </MediaControl>
     )
