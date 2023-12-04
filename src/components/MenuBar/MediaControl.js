@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { SVG_Media_Pause, SVG_Media_Forward } from '../IconPack';
+import { SVG_Media_Back, SVG_Media_Pause, SVG_Media_Forward } from '../IconPack';
 
 const MediaControl = styled.div`
     display: flex;
@@ -34,26 +34,31 @@ const Buttons = styled.div`
 `
 
 const Back = styled.div`
+    display: flex;
+    width: 26px;
+    height: 26px;
     border-radius: 30px;
+    justify-content: center;
+    align-items: center;
 `
 
 const PlayPause = styled.div`
-display: flex;
+    display: flex;
     width: 30px;
     height: 30px;
     justify-content: center;
     align-items: center;
-    align-self: stretch;
+    /* align-self: stretch; */
     border-radius: 30px;
 `
 
 const Forward = styled.div`
+    display: flex;
     width: 26px;
     height: 26px;
+    border-radius: 30px;
     justify-content: center;
     align-items: center;
-    align-self: stretch;
-    border-radius: 30px;
 `
 
 export function MbMediaControl() {
@@ -67,7 +72,7 @@ export function MbMediaControl() {
                 {/* <img src='@/DummyAssets/Screenshot 2023-11-29 123542.png'></img> */}
             </Artwork>
             <Buttons>
-                <Back className='bC-BG e-Button'>a</Back>
+                <Back className='bC-BG e-Button'><SVG_Media_Back size={9.75}/></Back>
                 <PlayPause className='bC-BG e-Button'><SVG_Media_Pause size={14.5}/></PlayPause>
                 <Forward className='bC-BG e-Button'><SVG_Media_Forward size={9.75}/></Forward>
             </Buttons>

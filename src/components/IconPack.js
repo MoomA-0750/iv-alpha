@@ -16,6 +16,16 @@ export function SVG_home_12(props) {
     )
 }
 
+// ori-Media-Back
+export function SVG_Media_Back(props) {
+    return (
+        <svg width={props.size} height={props.size} viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M8.72214 0.299125C9.12098 0.697958 9.12098 1.34459 8.72214 1.74343L4.46558 5.99999L8.72214 10.2566C9.12098 10.6554 9.12098 11.302 8.72214 11.7009C8.32331 12.0997 7.67668 12.0997 7.27784 11.7009L2.29912 6.72214C1.90029 6.32331 1.90029 5.67668 2.29912 5.27784L7.27784 0.299125C7.67668 -0.0997083 8.32331 -0.0997083 8.72214 0.299125Z" fill="black" fill-opacity="0.7"/>
+        </svg>
+
+    )
+}
+
 // ori-Media-Pause
 export function SVG_Media_Pause(props) {
     return (
@@ -26,11 +36,13 @@ export function SVG_Media_Pause(props) {
 }
 
 // ori-Media-Forward
-export function SVG_Media_Forward() {
+export function SVG_Media_Forward(props) {
     return (
-        <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width={props.size} height={props.size} viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M4.19631 11.7564C3.79747 11.3576 3.79747 10.711 4.19631 10.3121L8.45288 6.05556L4.19631 1.79899C3.79747 1.40015 3.79747 0.753515 4.19631 0.354683C4.59514 -0.0441514 5.24178 -0.0441514 5.64061 0.354683L10.6193 5.33341C11.0182 5.73224 11.0182 6.37888 10.6193 6.77771L5.64061 11.7564C5.24178 12.1553 4.59514 12.1553 4.19631 11.7564Z" fill="black" fill-opacity="0.7"/>
         </svg>
 
     )
 }
+
+
