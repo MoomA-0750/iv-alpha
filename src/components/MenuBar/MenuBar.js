@@ -5,6 +5,7 @@ import { MbContextMenu } from './ContextMenu.js';
 import { MbMediaControl } from './MediaControl';
 
 const MenuBarBody = styled.div`
+    position: fixed;
     display: flex;
     width: calc(100vw - 30px);
     height: 50px;

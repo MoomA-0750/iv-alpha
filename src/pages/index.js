@@ -13,7 +13,8 @@ export default function Home() {
       </Head>
       <main>
         <MenuBar />
-        <SideBar />
+        {/* <SideBar /> */}
+        <div className="unko">asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/></div>
       </main>
     </>
   )
