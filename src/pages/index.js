@@ -1,4 +1,5 @@
 import { MenuBar } from '@/components/MenuBar/MenuBar'
+import { SideBar } from '@/components/SideBar/SideBar'
 import Head from 'next/head'
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
       </Head>
       <main>
         <MenuBar />
+        <SideBar />
       </main>
     </>
   )
