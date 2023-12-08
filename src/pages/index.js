@@ -1,5 +1,5 @@
 import { MenuBar } from '@/components/MenuBar/MenuBar'
-import { SideBar } from '@/components/SideBar/SideBar'
+import { SideBar } from '../components/SideBar/SideBar'
 import Head from 'next/head'
 
 export default function Home() {
@@ -12,8 +12,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        {/* <MenuBar /> */}
-        <SideBar/>
+        <MenuBar />
+        <SideBar />
         <div className="unko">asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/></div>
       </main>
     </>
