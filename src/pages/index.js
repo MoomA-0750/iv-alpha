@@ -12,8 +12,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <MenuBar />
-        {/* <SideBar /> */}
+        {/* <MenuBar /> */}
+        <SideBar/>
         <div className="unko">asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/></div>
       </main>
     </>
