@@ -12,6 +12,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
+        <div className='wallpaper'></div>
         <MenuBar />
         <SideBar />
         <div className="unko">asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/>asdfasdf<br/></div>

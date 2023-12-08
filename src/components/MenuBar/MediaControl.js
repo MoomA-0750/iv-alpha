@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import styled from 'styled-components'
 import { SVG_Media_Back, SVG_Media_Pause, SVG_Media_Forward } from '../IconPack';
 
@@ -25,6 +26,9 @@ const Title = styled.div`
 `
 
 const Artwork = styled.div`
+    width: 30px;
+    height: 30px;
+    border-radius: 2px
 `
 
 const Buttons = styled.div`
@@ -48,7 +52,6 @@ const PlayPause = styled.div`
     height: 30px;
     justify-content: center;
     align-items: center;
-    /* align-self: stretch; */
     border-radius: 30px;
 `
 
@@ -69,7 +72,7 @@ export function MbMediaControl() {
                 <SubTitle className='t-SubText-Normal tC-TextSub'>Artists</SubTitle>
             </MediaInfo>
             <Artwork>
-                {/* <img src='@/DummyAssets/Screenshot 2023-11-29 123542.png'></img> */}
+                <Image src="/DummyAssets/f61b07f3908bff741f3bc946eda24bd2.png" width={30} height={30} alt='Artwork' />
             </Artwork>
             <Buttons>
                 <Back className='bC-BG e-Button'><SVG_Media_Back size={9.75}/></Back>
