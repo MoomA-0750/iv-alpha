@@ -78,8 +78,14 @@
   line-height: 130%;
 }
 
+.t-SubMax-Regular {
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 130%;
+}
+
 /* - Full Screen */
-.t-Max-Bolder {
+.t-FullScreen-Title {
   font-size: 128px;
   font-weight: 700;
   line-height: 100%;
@@ -135,8 +141,4 @@
   height: 100%;
   background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8));
   border-radius: 20px;
-}
-
-.unko {
-  font-size: 48px;
 }

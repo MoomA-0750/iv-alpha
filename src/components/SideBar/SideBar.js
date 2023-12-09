@@ -12,6 +12,7 @@ const SideBarBody = styled.div`
     justify-content: center;
     align-items: center;
     gap: 10px;
+    z-index: 100;
 `
 
 const ContextMenu = styled.div`

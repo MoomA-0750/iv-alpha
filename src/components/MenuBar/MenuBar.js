@@ -12,6 +12,7 @@ const MenuBarBody = styled.div`
     margin: 15px;
     justify-content: space-between;
     align-items: center;
+    z-index: 100;
 `
 
 const Left = styled.div`
