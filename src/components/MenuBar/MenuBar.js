@@ -128,7 +128,7 @@ export function MenuBar(props) {
                         <Title className='t-Text-Bolder tC-Text'>Long Naaaaame</Title>
                     </Label>
                 </NavButtons>
-                <MbContextMenu/>
+                {/* <MbContextMenu/> */}
             </Left>
             <Right className='bC-BGSub e-Box'>
                 <Status className='bC-BG e-Button'>
