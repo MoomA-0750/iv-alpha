@@ -2,6 +2,7 @@ import { MenuBar } from '@/components/MenuBar/MenuBar'
 import { SideBar } from '../components/SideBar/SideBar'
 import Head from 'next/head'
 import styled from 'styled-components'
+import { BannerSlide } from '@/components/Assets/BannerSlide'
 
 const MainContents = styled.div`
   max-width: 1020px;
@@ -19,23 +20,6 @@ const Top = styled.div`
 
 const Title = styled.div`
   margin-right: auto;
-`
-
-const Contexts = styled.div``
-
-const TopBanner = styled.div`
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 5px;
-`
-
-const Frame = styled.div`
-  width: 400px;
-  height: 225px;
-  border-radius: 20px;
-  overflow: hidden;
 `
 
 export default function Home() {
@@ -57,12 +41,7 @@ export default function Home() {
               <div className='t-Max-Bolder tC-Text'>IdolVerse</div>
               {/* <div className='t-SubMax-Regular tC-TextSub'>あなたの知らない興奮に案内します</div> */}
             </Title>
-            <TopBanner>
-              <div className='t-BlockTitle-Bolder tC-Text'>最近の出来事</div>
-              <Contexts>
-                <Frame></Frame>
-              </Contexts>
-            </TopBanner>
+            <BannerSlide title={"最近の出来事"} />
           </Top>
         </MainContents>
       </main>
