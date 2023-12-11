@@ -58,6 +58,8 @@ const UserInfo = styled.div`
 const UserIcon = styled.div`
     width: 16px;
     height: 16px;
+    border-radius: 20px;
+    overflow: hidden;
 `
 
 export function BannerSlide(props) {
@@ -77,14 +79,25 @@ export function BannerSlide(props) {
                     </div>
                     <TextBox>
                         <div className='t-BlockTitle-Bolder tC-fff e-Context-Highlight'>
-                            asdf
+                            asdf<br/>記事タイトルほげほげ
                         </div>
                         <Info>
                             <UserInfo>
-                                <UserIcon></UserIcon>
+                                <UserIcon>
+                                <div style={{position: 'relative'}}>
+                                    <Image style={{position: 'absolute', left: '-5px'}}
+                                        src="/DummyAssets/112a843d79954b04cfbb8b38530639a5.png"
+                                        width={42.667}
+                                        height={24}
+                                        alt='Artwork'
+                                    />
+                                    <DarkGradient style={{position: 'absolute'}} />
+                                </div>
+                                </UserIcon>
                                 <div className='t-SubText2-Normal tC-fff e-Context-Highlight'>User Name</div>
                             </UserInfo>
                             <Dot className='bC-BGSub'></Dot>
+                            <div className='t-SubText2-Normal tC-fff e-Context-Highlight'>バナータイプ</div>
                         </Info>
                     </TextBox>
                 </Frame>
