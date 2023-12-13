@@ -10,7 +10,8 @@ const Banner = styled.div`
 `
 
 const Frame = styled.div`
-    width: 400px;
+    position: relative;
+    min-width: 400px;
     height: 225px;
     border-radius: 20px;
     overflow: hidden;
@@ -35,7 +36,14 @@ const TextBox = styled.div`
     z-index:2;
 `
 
-const Contexts = styled.div``
+const Contexts = styled.div`
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    gap: 15px;
+    overflow-x: scroll;
+    white-space: nowrap;
+`
 
 const Info = styled.div`
     display: flex;
@@ -67,6 +75,74 @@ export function BannerSlide(props) {
         <Banner>
             <div className='t-BlockTitle-Bolder tC-Text'>{props.title}</div>
             <Contexts>
+                <Frame className='e-Button'>
+                    <div style={{position: 'relative'}}>
+                        <Image style={{position: 'absolute'}}
+                            src="/DummyAssets/f61b07f3908bff741f3bc946eda24bd2.png"
+                            width={400}
+                            height={225}
+                            alt='Artwork'
+                        />
+                        <DarkGradient style={{position: 'absolute'}} />
+                    </div>
+                    <TextBox>
+                        <div className='t-BlockTitle-Bolder tC-fff e-Context-Highlight'>
+                            asdf<br/>記事タイトルほげほげ
+                        </div>
+                        <Info>
+                            <UserInfo>
+                                <UserIcon>
+                                <div style={{position: 'relative'}}>
+                                    <Image style={{position: 'absolute', left: '-5px'}}
+                                        src="/DummyAssets/112a843d79954b04cfbb8b38530639a5.png"
+                                        width={42.667}
+                                        height={24}
+                                        alt='Artwork'
+                                    />
+                                    <DarkGradient style={{position: 'absolute'}} />
+                                </div>
+                                </UserIcon>
+                                <div className='t-SubText2-Normal tC-fff e-Context-Highlight'>User Name</div>
+                            </UserInfo>
+                            <Dot className='bC-BGSub'></Dot>
+                            <div className='t-SubText2-Normal tC-fff e-Context-Highlight'>バナータイプ</div>
+                        </Info>
+                    </TextBox>
+                </Frame>
+                <Frame className='e-Button'>
+                    <div style={{position: 'relative'}}>
+                        <Image style={{position: 'absolute'}}
+                            src="/DummyAssets/f61b07f3908bff741f3bc946eda24bd2.png"
+                            width={400}
+                            height={225}
+                            alt='Artwork'
+                        />
+                        <DarkGradient style={{position: 'absolute'}} />
+                    </div>
+                    <TextBox>
+                        <div className='t-BlockTitle-Bolder tC-fff e-Context-Highlight'>
+                            asdf<br/>記事タイトルほげほげ
+                        </div>
+                        <Info>
+                            <UserInfo>
+                                <UserIcon>
+                                <div style={{position: 'relative'}}>
+                                    <Image style={{position: 'absolute', left: '-5px'}}
+                                        src="/DummyAssets/112a843d79954b04cfbb8b38530639a5.png"
+                                        width={42.667}
+                                        height={24}
+                                        alt='Artwork'
+                                    />
+                                    <DarkGradient style={{position: 'absolute'}} />
+                                </div>
+                                </UserIcon>
+                                <div className='t-SubText2-Normal tC-fff e-Context-Highlight'>User Name</div>
+                            </UserInfo>
+                            <Dot className='bC-BGSub'></Dot>
+                            <div className='t-SubText2-Normal tC-fff e-Context-Highlight'>バナータイプ</div>
+                        </Info>
+                    </TextBox>
+                </Frame>
                 <Frame className='e-Button'>
                     <div style={{position: 'relative'}}>
                         <Image style={{position: 'absolute'}}
