@@ -48,7 +48,7 @@ const Contexts = styled.div`
 const Info = styled.div`
     display: flex;
     align-items: center;
-    gap: 3px;
+    gap: 5px;
 `
 
 const Dot = styled.div`
@@ -105,7 +105,7 @@ export function BannerSlide(props) {
                                 <div className='t-SubText2-Normal tC-fff e-Context-Highlight'>User Name</div>
                             </UserInfo>
                             <Dot className='bC-BGSub'></Dot>
-                            <div className='t-SubText2-Normal tC-fff e-Context-Highlight'>バナータイプ</div>
+                            <div className='t-SubText2-Normal tC-fff e-Context-Highlight'>6/14 (水)</div>
                         </Info>
                     </TextBox>
                 </Frame>
@@ -139,7 +139,7 @@ export function BannerSlide(props) {
                                 <div className='t-SubText2-Normal tC-fff e-Context-Highlight'>User Name</div>
                             </UserInfo>
                             <Dot className='bC-BGSub'></Dot>
-                            <div className='t-SubText2-Normal tC-fff e-Context-Highlight'>バナータイプ</div>
+                            <div className='t-SubText2-Normal tC-fff e-Context-Highlight'>6/14 (水)</div>
                         </Info>
                     </TextBox>
                 </Frame>
@@ -173,7 +173,7 @@ export function BannerSlide(props) {
                                 <div className='t-SubText2-Normal tC-fff e-Context-Highlight'>User Name</div>
                             </UserInfo>
                             <Dot className='bC-BGSub'></Dot>
-                            <div className='t-SubText2-Normal tC-fff e-Context-Highlight'>バナータイプ</div>
+                            <div className='t-SubText2-Normal tC-fff e-Context-Highlight'>6/14（水）</div>
                         </Info>
                     </TextBox>
                 </Frame>
@@ -207,7 +207,7 @@ export function BannerSlide(props) {
                                 <div className='t-SubText2-Normal tC-fff e-Context-Highlight'>User Name</div>
                             </UserInfo>
                             <Dot className='bC-BGSub'></Dot>
-                            <div className='t-SubText2-Normal tC-fff e-Context-Highlight'>バナータイプ</div>
+                            <div className='t-SubText2-Normal tC-fff e-Context-Highlight'>6/14（水）</div>
                         </Info>
                     </TextBox>
                 </Frame>
