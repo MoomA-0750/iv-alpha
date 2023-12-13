@@ -9,6 +9,10 @@ const MainContents = styled.div`
   position: relative;
   top: 95px;
   margin: 0 auto;
+  
+  @media (max-width: 1260px) {
+    margin-left: 120px;
+  }
 `
 
 const Top = styled.div`
