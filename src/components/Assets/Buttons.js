@@ -1,7 +1,8 @@
 import Image from 'next/image'
 import styled from 'styled-components';
+import { SVG_calendar, SVG_guide_board, SVG_book } from '../IconPack';
 
-const Banner = styled.div`
+const Button = styled.div`
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -10,25 +11,17 @@ const Banner = styled.div`
 `
 
 const Frame = styled.div`
-    position: relative;
-    min-width: 400px;
-    height: 225px;
-    border-radius: 20px;
+    width: 100%;
+    height: 60px;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
     overflow: hidden;
 `
 
-const DarkGradient = styled.div`
-    width: 400px;
-    height: 225px;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 37.5%, rgba(0, 0, 0, 0.70) 100%);
-`
-
 const TextBox = styled.div`
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    display: inline-flex;
-    padding: 10px;
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-start;
@@ -38,78 +31,54 @@ const TextBox = styled.div`
 
 const Contexts = styled.div`
     display: flex;
-    width: 100%;
+    width: calc(100% - 20px);
     align-items: flex-start;
     gap: 15px;
     overflow-x: scroll;
     white-space: nowrap;
-`
-
-const Info = styled.div`
-    display: flex;
-    align-items: center;
-    gap: 3px;
-`
-
-const Dot = styled.div`
-    width: 3px;
-    height: 3px;
-    border-radius: 3px;
-`
-
-const UserInfo = styled.div`
-    display: flex;
-    align-items: center;
-    gap: 5px;
-`
-
-const UserIcon = styled.div`
-    width: 16px;
-    height: 16px;
     border-radius: 20px;
-    overflow: hidden;
+    padding: 10px;
 `
 
-export function BannerSlide(props) {
+export function Buttons(props) {
     return (
-        <Banner>
+        <Button>
             <div className='t-BlockTitle-Bolder tC-Text'>{props.title}</div>
-            <Contexts>
-                <Frame className='e-Button'>
-                    <div style={{position: 'relative'}}>
-                        <Image style={{position: 'absolute'}}
-                            src="/DummyAssets/f61b07f3908bff741f3bc946eda24bd2.png"
-                            width={400}
-                            height={225}
-                            alt='Artwork'
-                        />
-                        <DarkGradient style={{position: 'absolute'}} />
-                    </div>
+            <Contexts className='bC-BGSub e-Box'>
+                <Frame className='bC-BG e-Button'>
+                    <SVG_calendar size={30}/>
                     <TextBox>
-                        <div className='t-BlockTitle-Bolder tC-fff e-Context-Highlight'>
-                            asdf<br/>記事タイトルほげほげ
+                        <div className='t-Text-Bolder'>
+                            予定を見る
                         </div>
-                        <Info>
-                            <UserInfo>
-                                <UserIcon>
-                                <div style={{position: 'relative'}}>
-                                    <Image style={{position: 'absolute', left: '-5px'}}
-                                        src="/DummyAssets/112a843d79954b04cfbb8b38530639a5.png"
-                                        width={42.667}
-                                        height={24}
-                                        alt='Artwork'
-                                    />
-                                    <DarkGradient style={{position: 'absolute'}} />
-                                </div>
-                                </UserIcon>
-                                <div className='t-SubText2-Normal tC-fff e-Context-Highlight'>User Name</div>
-                            </UserInfo>
-                            <Dot className='bC-BGSub'></Dot>
-                            <div className='t-SubText2-Normal tC-fff e-Context-Highlight'>バナータイプ</div>
-                        </Info>
+                        <div className='t-SubText-Normal tC-TextSub'>
+                            イベントカレンダー
+                        </div>
+                    </TextBox>
+                </Frame>
+                <Frame className='bC-BG e-Button'>
+                    <SVG_guide_board size={30}/>
+                    <TextBox>
+                        <div className='t-Text-Bolder'>
+                            交流する
+                        </div>
+                        <div className='t-SubText-Normal tC-TextSub'>
+                            コミュニティ
+                        </div>
+                    </TextBox>
+                </Frame>
+                <Frame className='bC-BG e-Button'>
+                    <SVG_book size={30}/>
+                    <TextBox>
+                        <div className='t-Text-Bolder'>
+                            過去を振りかえる
+                        </div>
+                        <div className='t-SubText-Normal tC-TextSub'>
+                            アーカイブ
+                        </div>
                     </TextBox>
                 </Frame>
             </Contexts>
-        </Banner>
+        </Button>
     )
 }

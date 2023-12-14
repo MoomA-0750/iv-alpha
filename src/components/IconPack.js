@@ -34,15 +34,6 @@ export function SVG_people_checkmark_24(props) {
     )
 }
 
-// ic_fluent_calendar_24_filled
-export function SVG_calendar_24(props) {
-    return (
-        <svg xmlns="http://www.w3.org/2000/svg" width={props.size} height={props.size} viewBox="0 0 30 30" fill="none">
-            <path d="M7.6875 1.75C7.90299 1.75 8.10965 1.8356 8.26202 1.98798C8.4144 2.14035 8.5 2.34701 8.5 2.5625V3.375H21.5V2.5625C21.5 2.34701 21.5856 2.14035 21.738 1.98798C21.8903 1.8356 22.097 1.75 22.3125 1.75C22.528 1.75 22.7347 1.8356 22.887 1.98798C23.0394 2.14035 23.125 2.34701 23.125 2.5625V3.375H24.75C25.612 3.375 26.4386 3.71741 27.0481 4.3269C27.6576 4.9364 28 5.76305 28 6.625V24.5C28 25.362 27.6576 26.1886 27.0481 26.7981C26.4386 27.4076 25.612 27.75 24.75 27.75H5.25C4.38805 27.75 3.5614 27.4076 2.9519 26.7981C2.34241 26.1886 2 25.362 2 24.5V9.875H28V8.25H2V6.625C2 5.76305 2.34241 4.9364 2.9519 4.3269C3.5614 3.71741 4.38805 3.375 5.25 3.375H6.875V2.5625C6.875 2.34701 6.9606 2.14035 7.11298 1.98798C7.26535 1.8356 7.47201 1.75 7.6875 1.75V1.75Z" fill="black" fill-opacity="0.7"/>
-        </svg>
-    )
-}
-
 // ic_people_community_20_filled
 export function SVG_people_community_24(props) {
     return (
@@ -52,7 +43,7 @@ export function SVG_people_community_24(props) {
     )
 }
 
-// clarity_book_solid
+// clarity:book-solid
 export function SVG_book(props) {
     return (
         <svg xmlns="http://www.w3.org/2000/svg" width={props.size} height={props.size} viewBox="0 0 30 31" fill="none">
@@ -62,10 +53,36 @@ export function SVG_book(props) {
         </g>
         <defs>
             <clipPath id="clip0_2040_1006">
-            <rect width="30" height="30" fill="white" transform="translate(0 0.5)"/>
+            <rect width={props.size} height={props.size} fill="white" transform="translate(0 0.5)"/>
             </clipPath>
         </defs>
         </svg>
+    )
+}
+
+// bi:calendar-fill
+export function SVG_calendar(props) {
+    return (
+        <svg xmlns="http://www.w3.org/2000/svg" width={props.size} height={props.size} viewBox="0 0 30 30" fill="none">
+            <path d="M7.6875 1.75C7.90299 1.75 8.10965 1.8356 8.26202 1.98798C8.4144 2.14035 8.5 2.34701 8.5 2.5625V3.375H21.5V2.5625C21.5 2.34701 21.5856 2.14035 21.738 1.98798C21.8903 1.8356 22.097 1.75 22.3125 1.75C22.528 1.75 22.7347 1.8356 22.887 1.98798C23.0394 2.14035 23.125 2.34701 23.125 2.5625V3.375H24.75C25.612 3.375 26.4386 3.71741 27.0481 4.3269C27.6576 4.9364 28 5.76305 28 6.625V24.5C28 25.362 27.6576 26.1886 27.0481 26.7981C26.4386 27.4076 25.612 27.75 24.75 27.75H5.25C4.38805 27.75 3.5614 27.4076 2.9519 26.7981C2.34241 26.1886 2 25.362 2 24.5V9.875H28V8.25H2V6.625C2 5.76305 2.34241 4.9364 2.9519 4.3269C3.5614 3.71741 4.38805 3.375 5.25 3.375H6.875V2.5625C6.875 2.34701 6.9606 2.14035 7.11298 1.98798C7.26535 1.8356 7.47201 1.75 7.6875 1.75V1.75Z" fill="black" fill-opacity="0.7"/>
+        </svg>
+    )
+}
+
+// icon-park-solid:guide-board
+export function SVG_guide_board(props) {
+    return (
+        <svg xmlns="http://www.w3.org/2000/svg" width={props.size} height={props.size} viewBox="0 0 31 30" fill="none">
+            <mask id="mask0_1701_994" maskUnits="userSpaceOnUse" x="2" y="0" width="27" height="29">
+                <path d="M15.3334 2.5V25.625" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M15.3334 5H25.049L26.5834 7.5L25.049 10H15.3334V5ZM15.3334 13.75H5.61775L4.08337 16.25L5.61775 18.75H15.3334V13.75Z" fill="white" stroke="white" stroke-width="4" stroke-linejoin="round"/>
+                <path d="M10.3334 26.25H20.3334" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+            </mask>
+            <g mask="url(#mask0_1701_994)">
+                <path d="M0.333374 0H30.3334V30H0.333374V0Z" fill="black" fill-opacity="0.7"/>
+            </g>
+        </svg>
+
     )
 }
 

@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { SVG_search_24, SVG_people_checkmark_24, SVG_calendar_24, SVG_people_community_24, SVG_book } from '../IconPack';
+import { SVG_search_24, SVG_people_checkmark_24, SVG_calendar, SVG_people_community_24, SVG_book } from '../IconPack';
 
 const SideBarBody = styled.div`
     position: fixed;
@@ -55,7 +55,7 @@ export function SideBar() {
             </ContextMenu>
             <ContextMenu className='bC-BGSub e-Box'>
                 <Context className='bC-BG e-Button'>
-                    <SVG_calendar_24 size={30} />
+                    <SVG_calendar size={30} />
                     <Label className='tC-Text t-10pxNormal'>イベント<br/>カレンダー</Label>
                 </Context>
                 <Context className='bC-BG e-Button'>

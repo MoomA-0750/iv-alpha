@@ -69,7 +69,7 @@ export function MbMediaControl() {
     return (
         <MediaControl className='bC-BG e-Button'>
             <MediaInfo>
-                <Title className='t-Text-Bolder tC-Text'>Media Title</Title>
+                <Title className='t-Text-Bolder'>Media Title</Title>
                 <SubTitle className='t-SubText-Normal tC-TextSub'>Artists</SubTitle>
             </MediaInfo>
             <Artwork>

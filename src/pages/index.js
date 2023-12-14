@@ -3,6 +3,7 @@ import { SideBar } from '../components/SideBar/SideBar'
 import Head from 'next/head'
 import styled from 'styled-components'
 import { BannerSlide } from '@/components/Assets/BannerSlide'
+import { Buttons } from '@/components/Assets/Buttons'
 
 const MainContents = styled.div`
   max-width: 1020px;
@@ -42,10 +43,11 @@ export default function Home() {
         <MainContents>
           <Top>
             <Title>
-              <div className='t-Max-Bolder tC-Text'>IdolVerse</div>
+              <div className='t-Max-Bolder'>IdolVerse</div>
               {/* <div className='t-SubMax-Regular tC-TextSub'>あなたの知らない興奮に案内します</div> */}
             </Title>
             <BannerSlide title={"最近の出来事"} />
+            <Buttons title={"クイックアクセス"} />
           </Top>
         </MainContents>
       </main>

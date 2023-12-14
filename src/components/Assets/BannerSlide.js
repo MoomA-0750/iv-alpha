@@ -73,7 +73,7 @@ const UserIcon = styled.div`
 export function BannerSlide(props) {
     return (
         <Banner>
-            <div className='t-BlockTitle-Bolder tC-Text'>{props.title}</div>
+            <div className='t-BlockTitle-Bolder'>{props.title}</div>
             <Contexts>
                 <Frame className='e-Button'>
                     <div style={{position: 'relative'}}>

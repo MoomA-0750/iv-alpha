@@ -125,7 +125,7 @@ export function MenuBar(props) {
                     <Home className='bC-BG e-Button'><SVG_home_12 size={20} /></Home>
                     <Label className='bC-BG'>
                         <SubTitle className='t-SubText-Normal tC-TextSub'>アーカイブ</SubTitle>
-                        <Title className='t-Text-Bolder tC-Text'>Long Naaaaame</Title>
+                        <Title className='t-Text-Bolder'>Long Naaaaame</Title>
                     </Label>
                 </NavButtons>
                 {/* <MbContextMenu/> */}
@@ -133,7 +133,7 @@ export function MenuBar(props) {
             <Right className='bC-BGSub e-Box'>
                 <Status className='bC-BG e-Button'>
                     <CaleTime>
-                        <Title className='t-Text-Bolder tC-Text'>{time}</Title>
+                        <Title className='t-Text-Bolder'>{time}</Title>
                         <SubTitle className='t-SubText-Normal tC-TextSub'>{date}</SubTitle>
                     </CaleTime>
                 </Status>
