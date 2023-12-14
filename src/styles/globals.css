@@ -8,6 +8,10 @@
   color: rgba(0, 0, 0, 0.7);
 }
 
+a {
+  text-decoration: none;
+}
+
 .wallpaper {
   position: fixed;
   width: 100%;

@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import styled from 'styled-components'
-import { SVG_Media_Back, SVG_Media_Pause, SVG_Media_Forward } from '../IconPack';
+import { SVG_Media_Back, SVG_Media_Pause, SVG_Media_Forward } from '@/components/IconPack';
 
 const MediaControl = styled.div`
     display: flex;

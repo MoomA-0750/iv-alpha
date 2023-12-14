@@ -13,7 +13,7 @@ export default function MainList() {
       </Head>
       <main>
         <div className='wallpaper'></div>
-        <MenuBar />
+        <MenuBar title={"アーカイブ"} />
         <SideBar />
       </main>
     </>

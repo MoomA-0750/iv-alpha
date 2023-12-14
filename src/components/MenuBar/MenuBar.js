@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
-import { SVG_arrow_left_12, SVG_home_12 } from '../IconPack';
-import { MbContextMenu } from './ContextMenu.js';
-import { MbMediaControl } from './MediaControl';
+import { SVG_arrow_left_12, SVG_home_12 } from '@/components/IconPack';
+import { MbContextMenu } from '@/components/MenuBar/ContextMenu';
+import { MbMediaControl } from '@/components/MenuBar/MediaControl';
 
 const MenuBarBody = styled.div`
     position: fixed;
@@ -124,11 +124,11 @@ export function MenuBar(props) {
                     <Back className='bC-BG e-Button'><SVG_arrow_left_12 size={20} /></Back>
                     <Home className='bC-BG e-Button'><SVG_home_12 size={20} /></Home>
                     <Label className='bC-BG'>
-                        <SubTitle className='t-SubText-Normal tC-TextSub'>アーカイブ</SubTitle>
-                        <Title className='t-Text-Bolder'>Long Naaaaame</Title>
+                        <SubTitle className='t-SubText-Normal tC-TextSub'>{props.subtitle}</SubTitle>
+                        <Title className='t-Text-Bolder'>{props.title}</Title>
                     </Label>
                 </NavButtons>
-                {/* <MbContextMenu/> */}
+                <MbContextMenu/>
             </Left>
             <Right className='bC-BGSub e-Box'>
                 <Status className='bC-BG e-Button'>

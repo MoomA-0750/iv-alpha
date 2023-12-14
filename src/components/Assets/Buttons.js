@@ -1,6 +1,6 @@
-import Image from 'next/image'
+import Link from 'next/link';
 import styled from 'styled-components';
-import { SVG_calendar, SVG_guide_board, SVG_book } from '../IconPack';
+import { SVG_calendar, SVG_guide_board, SVG_book } from '@/components/IconPack';
 
 const Button = styled.div`
     width: 100%;

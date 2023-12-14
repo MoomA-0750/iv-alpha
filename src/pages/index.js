@@ -1,5 +1,5 @@
 import { MenuBar } from '@/components/MenuBar/MenuBar'
-import { SideBar } from '../components/SideBar/SideBar'
+import { SideBar } from '@/components/SideBar/SideBar'
 import Head from 'next/head'
 import styled from 'styled-components'
 import { BannerSlide } from '@/components/Assets/BannerSlide'
@@ -38,13 +38,13 @@ export default function Home() {
       </Head>
       <main>
         <div className='wallpaper'></div>
-        <MenuBar />
+        <MenuBar subtitle={"Alpha Build"} title={"IdolVerse"} />
         <SideBar />
         <MainContents>
           <Top>
             <Title>
               <div className='t-Max-Bolder'>IdolVerse</div>
-              {/* <div className='t-SubMax-Regular tC-TextSub'>あなたの知らない興奮に案内します</div> */}
+              <div className='t-SubMax-Regular tC-TextSub'>Alpha Build. Working In Progress...</div>
             </Title>
             <BannerSlide title={"最近の出来事"} />
             <Buttons title={"クイックアクセス"} />

@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import styled from 'styled-components';
 import { SVG_search_24, SVG_people_checkmark_24, SVG_calendar, SVG_people_community_24, SVG_book } from '../IconPack';
 
@@ -62,10 +63,12 @@ export function SideBar() {
                     <SVG_people_community_24 size={30} />
                     <Label className='tC-Text t-10pxNormal'>コミュニティ</Label>
                 </Context>
-                <Context className='bC-BG e-Button'>
-                    <SVG_book size={30} />
-                    <Label className='tC-Text t-10pxNormal'>アーカイブ</Label>
-                </Context>
+                <Link href={"/archives/mainlist"}>
+                    <Context className='bC-BG e-Button'>
+                        <SVG_book size={30} />
+                        <Label className='tC-Text t-10pxNormal'>アーカイブ</Label>
+                    </Context>
+                </Link>
             </ContextMenu>
         </SideBarBody>
     );
