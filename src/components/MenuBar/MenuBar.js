@@ -165,6 +165,5 @@ export function MenuBar(props) {
                 <MbMediaControl/>
             </Right>
         </MenuBarBody>
-        // unko
     )
 }
