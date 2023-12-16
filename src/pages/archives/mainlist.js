@@ -26,8 +26,8 @@ export default function MainList() {
       </Head>
       <main>
         <div className="wallpaper"></div>
-        <MenuBar title={"アーカイブ"} />
         <SideBar />
+        <MenuBar title={"アーカイブ"} />
         <MainContents>
           <Buttons2 title={"リスト"} />
         </MainContents>

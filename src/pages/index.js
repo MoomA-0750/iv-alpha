@@ -38,13 +38,13 @@ export default function Home() {
       </Head>
       <main>
         <div className='wallpaper'></div>
-        <MenuBar subtitle={"Alpha Build"} title={"IdolVerse"} />
         <SideBar />
+        <MenuBar subtitle={"WiP"} title={"IdolVerse"} />
         <MainContents>
           <Top>
             <Title>
               <div className='t-Max-Bolder'>IdolVerse</div>
-              <div className='t-SubMax-Regular tC-TextSub'>Alpha Build. Working In Progress...</div>
+              <div className='t-SubMax-Regular tC-TextSub'>Working in Progress...</div>
             </Title>
             <BannerSlide title={"最近の出来事"} />
             <Buttons title={"クイックアクセス"} />

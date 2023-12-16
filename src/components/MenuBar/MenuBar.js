@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Router from 'next/router'
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import { SVG_arrow_left_12, SVG_home_12 } from '@/components/IconPack';
@@ -8,11 +9,11 @@ import { MbMediaControl } from '@/components/MenuBar/MediaControl';
 const MenuBarBody = styled.div`
     position: fixed;
     display: grid;
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: max-content 1fr max-content;
     width: calc(100vw - 30px);
     height: 50px;
     margin: 15px;
-    gap: -25px;
+    column-gap: 10px;
     grid-auto-columns: minmax(0, auto);
     grid-auto-rows: minmax(50px, 50px);
     z-index: 100;
@@ -33,7 +34,7 @@ const Center = styled.div`
     align-self: stretch;
     width: 100%;
     overflow-x: scroll;
-    overflow: visible;
+    overflow: scroll;
 `
 
 const NavButtons = styled.div`
@@ -43,6 +44,10 @@ const NavButtons = styled.div`
     gap: 6px;
     align-self: stretch;
     border-radius: 34px;
+
+    a {
+        height: 100%;
+    }
 `
 
 const Back = styled.div`
@@ -58,6 +63,7 @@ const Back = styled.div`
 const Home = styled.div`
     display: flex;
     width: 42px;
+    height: 100%;
     justify-content: center;
     align-items: center;
     gap: 10px;
@@ -135,7 +141,7 @@ export function MenuBar(props) {
         <MenuBarBody>
             <Left>
                 <NavButtons className='bC-BGSub e-Box'>
-                    <Back className='bC-BG e-Button'><SVG_arrow_left_12 size={20} /></Back>
+                    <Back onClick={() => Router.back()} className='bC-BG e-Button'><SVG_arrow_left_12 size={20} /></Back>
                     <Link href={"/"}>
                         <Home className='bC-BG e-Button'><SVG_home_12 size={20} /></Home>
                     </Link>
