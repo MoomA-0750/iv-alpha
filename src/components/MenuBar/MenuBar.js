@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import { SVG_arrow_left_12, SVG_home_12 } from '@/components/IconPack';
@@ -6,12 +7,14 @@ import { MbMediaControl } from '@/components/MenuBar/MediaControl';
 
 const MenuBarBody = styled.div`
     position: fixed;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
     width: calc(100vw - 30px);
     height: 50px;
     margin: 15px;
-    justify-content: space-between;
-    align-items: center;
+    gap: -25px;
+    grid-auto-columns: minmax(0, auto);
+    grid-auto-rows: minmax(50px, 50px);
     z-index: 100;
 `
 
@@ -20,6 +23,17 @@ const Left = styled.div`
     align-items: center;
     gap: 10px;
     align-self: stretch;
+`
+
+const Center = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+    align-self: stretch;
+    width: 100%;
+    overflow-x: scroll;
+    overflow: visible;
 `
 
 const NavButtons = styled.div`
@@ -122,14 +136,19 @@ export function MenuBar(props) {
             <Left>
                 <NavButtons className='bC-BGSub e-Box'>
                     <Back className='bC-BG e-Button'><SVG_arrow_left_12 size={20} /></Back>
-                    <Home className='bC-BG e-Button'><SVG_home_12 size={20} /></Home>
+                    <Link href={"/"}>
+                        <Home className='bC-BG e-Button'><SVG_home_12 size={20} /></Home>
+                    </Link>
                     <Label className='bC-BG'>
                         <SubTitle className='t-SubText-Normal tC-TextSub'>{props.subtitle}</SubTitle>
                         <Title className='t-Text-Bolder'>{props.title}</Title>
                     </Label>
                 </NavButtons>
-                <MbContextMenu/>
             </Left>
+            <Center>
+                <MbContextMenu/>
+                <MbContextMenu/>
+            </Center>
             <Right className='bC-BGSub e-Box'>
                 <Status className='bC-BG e-Button'>
                     <CaleTime>

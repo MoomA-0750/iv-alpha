@@ -1,6 +1,19 @@
-import { MenuBar } from '@/components/MenuBar/MenuBar'
-import { SideBar } from '@/components/SideBar/SideBar'
-import Head from 'next/head'
+import { Buttons2 } from "@/components/Assets/Buttons2";
+import { MenuBar } from "@/components/MenuBar/MenuBar";
+import { SideBar } from "@/components/SideBar/SideBar";
+import Head from "next/head";
+import styled from "styled-components";
+
+const MainContents = styled.div`
+  max-width: 1020px;
+  position: relative;
+  top: 95px;
+  margin: 0 auto;
+
+  @media (max-width: 1260px) {
+    margin-left: 120px;
+  }
+`;
 
 export default function MainList() {
   return (
@@ -12,10 +25,13 @@ export default function MainList() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <div className='wallpaper'></div>
+        <div className="wallpaper"></div>
         <MenuBar title={"アーカイブ"} />
         <SideBar />
+        <MainContents>
+          <Buttons2 title={"リスト"} />
+        </MainContents>
       </main>
     </>
-  )
+  );
 }

@@ -2,6 +2,7 @@ import styled from 'styled-components'
 
 const ContextMenu = styled.div`
     display: flex;
+    flex-shrink: 0;
     margin: 4px 0;
     padding: 0 6px;
     align-items: center;
