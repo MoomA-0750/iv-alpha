@@ -24,17 +24,28 @@ const Left = styled.div`
     align-items: center;
     gap: 10px;
     align-self: stretch;
+    z-index: 1;
 `
 
 const Center = styled.div`
+    position: relative;
+    display: flex;
+    align-self: stretch;
+    overflow: visible;
+`
+
+const Unko = styled.div`
+    position: absolute;
+    width: 100%;
+    top: -5px;
+    left: -35px;
+    padding: 5px 35px;
     display: flex;
     align-items: center;
     justify-content: start;
     gap: 10px;
     align-self: stretch;
-    width: 100%;
     overflow-x: scroll;
-    overflow: scroll;
 `
 
 const NavButtons = styled.div`
@@ -98,6 +109,7 @@ const Right = styled.div`
     gap: 6px;
     align-self: stretch;
     border-radius: 28px;
+    z-index: 1;
 `
 
 const Status = styled.div`
@@ -152,8 +164,10 @@ export function MenuBar(props) {
                 </NavButtons>
             </Left>
             <Center>
-                {/* <MbContextMenu/>
-                <MbContextMenu/> */}
+                <Unko>
+                    <MbContextMenu/>
+                    <MbContextMenu/>
+                </Unko>
             </Center>
             <Right className='bC-BGSub e-Box'>
                 <Status className='bC-BG e-Button'>
@@ -162,7 +176,7 @@ export function MenuBar(props) {
                         <SubTitle className='t-SubText-Normal tC-TextSub'>{date}</SubTitle>
                     </CaleTime>
                 </Status>
-                {/* <MbMediaControl/> */}
+                <MbMediaControl/>
             </Right>
         </MenuBarBody>
     )

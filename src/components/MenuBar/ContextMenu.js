@@ -8,6 +8,7 @@ const ContextMenu = styled.div`
     align-items: center;
     align-self: stretch;
     border-radius: 34px;
+    max-height: 42px;
 `
 
 const Label = styled.div`
@@ -18,11 +19,10 @@ const Context = styled.div`
 padding: 0 14px;
 display: flex;
 height: 50px;
-padding: var(--Stick-Left, 0px) 14px;
+padding: 0 14px;
 
 justify-content: center;
 align-items: center;
-gap: var(--Stick-Left, 0px);
 border-radius: 50px;
 `
 
@@ -32,7 +32,7 @@ export function MbContextMenu() {
             <Label>
                 <div className='t-SubText2-Normal tC-TextSub'>表示方法</div>
             </Label>
-            <Context className='bC-BG e-Box'>トップ</Context>
+            <Context className='bC-BG e-Button'>トップ</Context>
             <Context>ギャラリー</Context>
             <Context>メンバー</Context>
             <Context>イベント</Context>

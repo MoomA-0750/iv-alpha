@@ -19,6 +19,15 @@ const Frame = styled.div`
   border-radius: 10px;
   overflow: hidden;
 `;
+// const Frame = styled.div`
+//   height: 90px;
+//   padding: 5px 5px 5px 10px;
+//   display: flex;
+//   align-items: center;
+//   gap: 5px;
+//   border-radius: 10px;
+//   overflow: hidden;
+// `;
 
 const GroupArtwork = styled.div`
   position: relative;
@@ -56,6 +65,7 @@ const UserArtwork = styled.div`
 `;
 
 const TextBox = styled.div`
+  width: auto;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
