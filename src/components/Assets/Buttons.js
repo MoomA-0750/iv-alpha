@@ -11,7 +11,8 @@ const Button = styled.div`
 const Frame = styled.div`
   height: 60px;
   padding: 0 15px;
-  display: flex;
+  display: grid;
+  grid-template-columns: max-content 1fr;
   align-items: center;
   gap: 10px;
   border-radius: 10px;
@@ -19,11 +20,11 @@ const Frame = styled.div`
 `;
 
 const TextBox = styled.div`
+  display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-start;
-  gap: 5px;
-  z-index: 2;
+  gap: 2px;
 `;
 
 const Contexts = styled.div`
@@ -31,8 +32,6 @@ const Contexts = styled.div`
   grid-template-columns: repeat(3, 1fr);
   width: calc(100% - 20px);
   gap: 15px;
-  overflow-x: scroll;
-  white-space: nowrap;
   border-radius: 20px;
   padding: 10px;
 `;

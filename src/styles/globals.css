@@ -9,6 +9,10 @@
   word-break: break-word;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 a {
   text-decoration: none;
 }

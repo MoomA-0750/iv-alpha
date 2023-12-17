@@ -61,13 +61,6 @@ const TextBox = styled.div`
   justify-content: flex-end;
   align-items: flex-start;
   gap: 2px;
-
-  * {
-    /* text-wrap: wrap; */
-    white-space: normal;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-  }
 `;
 
 const Contexts = styled.div`
@@ -75,7 +68,6 @@ const Contexts = styled.div`
   grid-template-columns: repeat(4, 1fr);
   width: calc(100% - 20px);
   gap: 15px;
-  overflow-x: scroll;
   border-radius: 20px;
   padding: 10px;
 `;
@@ -120,7 +112,7 @@ export function Buttons2(props) {
             </UserArtwork>
           </div>
           <TextBox>
-            <div className="t-Text-Bolder">Group Name</div>
+            <div className="t-Text-Bolder">User Name</div>
             <div className="t-SubText-Normal tC-TextSub">Theme</div>
             <div className="t-SubText-Normal tC-TextSub">Num of Followers</div>
           </TextBox>
@@ -144,6 +136,98 @@ export function Buttons2(props) {
           </div>
           <TextBox>
             <div className="t-Text-Bolder">Looooooooooooooooooooooong Group Name</div>
+            <div className="t-SubText-Normal tC-TextSub">Theme</div>
+            <div className="t-SubText-Normal tC-TextSub">Num of Followers</div>
+          </TextBox>
+        </Frame>
+        <Frame className="bC-BG e-Button">
+          <div style={{width: '75px', height: '75px'}}>
+            <GroupArtwork>
+              <Image
+                src="/DummyAssets/Square/rusk_1024.png"
+                width={45}
+                height={45}
+                alt='Artwork'
+              />
+              <Image className="e-Button"
+                src="/DummyAssets/Square/ama_1024.png"
+                width={60}
+                height={60}
+                alt='Artwork'
+              />
+            </GroupArtwork>
+          </div>
+          <TextBox>
+            <div className="t-Text-Bolder">Group Name</div>
+            <div className="t-SubText-Normal tC-TextSub">Theme</div>
+            <div className="t-SubText-Normal tC-TextSub">Num of Followers</div>
+          </TextBox>
+        </Frame>
+        <Frame className="bC-BG e-Button">
+          <div style={{width: '75px', height: '75px'}}>
+            <GroupArtwork>
+              <Image
+                src="/DummyAssets/Square/rusk_1024.png"
+                width={45}
+                height={45}
+                alt='Artwork'
+              />
+              <Image className="e-Button"
+                src="/DummyAssets/Square/ama_1024.png"
+                width={60}
+                height={60}
+                alt='Artwork'
+              />
+            </GroupArtwork>
+          </div>
+          <TextBox>
+            <div className="t-Text-Bolder">Group Name</div>
+            <div className="t-SubText-Normal tC-TextSub">Theme</div>
+            <div className="t-SubText-Normal tC-TextSub">Num of Followers</div>
+          </TextBox>
+        </Frame>
+        <Frame className="bC-BG e-Button">
+          <div style={{width: '75px', height: '75px'}}>
+            <GroupArtwork>
+              <Image
+                src="/DummyAssets/Square/rusk_1024.png"
+                width={45}
+                height={45}
+                alt='Artwork'
+              />
+              <Image className="e-Button"
+                src="/DummyAssets/Square/ama_1024.png"
+                width={60}
+                height={60}
+                alt='Artwork'
+              />
+            </GroupArtwork>
+          </div>
+          <TextBox>
+            <div className="t-Text-Bolder">Group Name</div>
+            <div className="t-SubText-Normal tC-TextSub">Theme</div>
+            <div className="t-SubText-Normal tC-TextSub">Num of Followers</div>
+          </TextBox>
+        </Frame>
+        <Frame className="bC-BG e-Button">
+          <div style={{width: '75px', height: '75px'}}>
+            <GroupArtwork>
+              <Image
+                src="/DummyAssets/Square/rusk_1024.png"
+                width={45}
+                height={45}
+                alt='Artwork'
+              />
+              <Image className="e-Button"
+                src="/DummyAssets/Square/ama_1024.png"
+                width={60}
+                height={60}
+                alt='Artwork'
+              />
+            </GroupArtwork>
+          </div>
+          <TextBox>
+            <div className="t-Text-Bolder">Group Name</div>
             <div className="t-SubText-Normal tC-TextSub">Theme</div>
             <div className="t-SubText-Normal tC-TextSub">Num of Followers</div>
           </TextBox>
