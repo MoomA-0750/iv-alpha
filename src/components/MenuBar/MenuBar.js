@@ -152,8 +152,8 @@ export function MenuBar(props) {
                 </NavButtons>
             </Left>
             <Center>
-                <MbContextMenu/>
-                <MbContextMenu/>
+                {/* <MbContextMenu/>
+                <MbContextMenu/> */}
             </Center>
             <Right className='bC-BGSub e-Box'>
                 <Status className='bC-BG e-Button'>
@@ -162,7 +162,7 @@ export function MenuBar(props) {
                         <SubTitle className='t-SubText-Normal tC-TextSub'>{date}</SubTitle>
                     </CaleTime>
                 </Status>
-                <MbMediaControl/>
+                {/* <MbMediaControl/> */}
             </Right>
         </MenuBarBody>
     )
