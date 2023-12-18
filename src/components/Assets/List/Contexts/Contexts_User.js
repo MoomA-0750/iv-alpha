@@ -76,9 +76,9 @@ export function Contexts_User(props) {
                 </GroupArtwork>
             </div>
             <TextBox>
-                <div className="t-Text-Bolder">Group Name</div>
-                <div className="t-SubText-Normal tC-TextSub">Theme</div>
-                <div className="t-SubText-Normal tC-TextSub">Num of Followers</div>
+                <div className="t-Text-Bolder">{props.title}</div>
+                <div className="t-SubText-Normal tC-TextSub">{props.theme}</div>
+                <div className="t-SubText-Normal tC-TextSub">{props.followersCount}</div>
             </TextBox>
         </Frame>
     );

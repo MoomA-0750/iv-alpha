@@ -15,12 +15,11 @@ const Contexts = styled.div`
 `;
 
 export function ListWrapper(props) {
-  const column = {props.column};
 
   return (
     <Button>
       <div className="t-BlockTitle-Bolder tC-Text">{props.title}</div>
-      <Contexts className="bC-BGSub e-Box" style={{gridTemplateColumns: 'repeat({props.column}, 1fr)'}}>
+      <Contexts className="bC-BGSub e-Box" style={{gridTemplateColumns: `repeat(${props.column}, 1fr)`}}>
         {props.Contexts}
       </Contexts>
     </Button>

@@ -34,9 +34,13 @@ export default function MainList() {
           <Buttons2 title={"リスト"} />
           <ListWrapper
             title={"リスト"}
-            column={"3"}
+            column={"4"}
             Contexts={
-              <Contexts_User/>
+              <Contexts_User
+                title={"Group Name"}
+                theme={"Theme"}
+                followersCount={"Num of Followers"}
+              />
             }
           />
         </MainContents>
