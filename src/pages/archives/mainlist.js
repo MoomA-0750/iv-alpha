@@ -1,4 +1,3 @@
-import { Buttons2 } from "@/components/Assets/Buttons2";
 import { Contexts_User } from "@/components/Assets/List/Contexts/Contexts_User";
 import { ListWrapper } from "@/components/Assets/List/ListWrapper";
 import { MenuBar } from "@/components/MenuBar/MenuBar";
@@ -31,16 +30,75 @@ export default function MainList() {
         <SideBar />
         <MenuBar title={"アーカイブ"} />
         <MainContents>
-          <Buttons2 title={"リスト"} />
           <ListWrapper
             title={"リスト"}
             column={"4"}
             Contexts={
-              <Contexts_User
-                title={"Group Name"}
-                theme={"Theme"}
-                followersCount={"Num of Followers"}
-              />
+              <>
+                <Contexts_User
+                  link={"/archives/users-page/top.js"}
+                  userType={"Group"}
+                  image={"/DummyAssets/Square/ama_1024.png"}
+                  subImage={"/DummyAssets/Square/rusk_1024.png"}
+                  title={"Group Name"}
+                  theme={"Theme"}
+                  followersCount={"Num of Followers"}
+                />
+                <Contexts_User
+                  image={"/DummyAssets/Square/ama_1024.png"}
+                  title={"User Name"}
+                  theme={"Theme"}
+                  followersCount={"Num of Followers"}
+                />
+                <Contexts_User
+                  userType={"Group"}
+                  image={"/DummyAssets/Square/ama_1024.png"}
+                  subImage={"/DummyAssets/Square/rusk_1024.png"}
+                  title={"Looooooooooooooooooooooong Group Name"}
+                  theme={"Theme"}
+                  followersCount={"Num of Followers"}
+                />
+                <Contexts_User
+                  userType={"Group"}
+                  image={"/DummyAssets/Square/ama_1024.png"}
+                  subImage={"/DummyAssets/Square/rusk_1024.png"}
+                  title={"Have Link"}
+                  theme={"Theme"}
+                  followersCount={"Num of Followers"}
+                />
+                <Contexts_User
+                  userType={"Group"}
+                  image={"/DummyAssets/Square/ama_1024.png"}
+                  subImage={"/DummyAssets/Square/rusk_1024.png"}
+                  title={"Group Name"}
+                  theme={"Theme"}
+                  followersCount={"Num of Followers"}
+                />
+                <Contexts_User
+                  userType={"Group"}
+                  image={"/DummyAssets/Square/ama_1024.png"}
+                  subImage={"/DummyAssets/Square/rusk_1024.png"}
+                  title={"Group Name"}
+                  theme={"Theme"}
+                  followersCount={"Num of Followers"}
+                />
+                <Contexts_User
+                  userType={"Group"}
+                  image={"/DummyAssets/Square/ama_1024.png"}
+                  subImage={"/DummyAssets/Square/rusk_1024.png"}
+                  title={"Group Name"}
+                  theme={"Theme"}
+                  followersCount={"Num of Followers"}
+                />
+                <Contexts_User
+                  userType={"Group"}
+                  image={"/DummyAssets/Square/ama_1024.png"}
+                  subImage={"/DummyAssets/Square/rusk_1024.png"}
+                  title={"Group Name"}
+                  theme={"Theme"}
+                  followersCount={"Num of Followers"}
+                />
+              </>
             }
           />
         </MainContents>

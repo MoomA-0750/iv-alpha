@@ -39,7 +39,11 @@ const UserArtwork = styled.div`
     position: relative;
     height: 75px;
 
-    * {
+    & :nth-child(1) {
+        display: none;
+    }
+
+    & :nth-child(2) {
         border-radius: 30px;
         position: absolute;
         overflow: hidden;
@@ -57,29 +61,34 @@ const TextBox = styled.div`
 `;
 
 export function Contexts_User(props) {
+    const Artwork = props.userType === 'Group' ? GroupArtwork : UserArtwork;
+    const link = props.link || "/default-link";
+
     return (
-        <Frame className="bC-BG e-Button">
-            <div style={{width: '75px', height: '75px'}}>
-                <GroupArtwork>
-                    <Image
-                        src="/DummyAssets/Square/rusk_1024.png"
-                        width={45}
-                        height={45}
-                        alt='Artwork'
-                    />
-                    <Image className="e-Button"
-                        src="/DummyAssets/Square/ama_1024.png"
-                        width={60}
-                        height={60}
-                        alt='Artwork'
-                    />
-                </GroupArtwork>
-            </div>
-            <TextBox>
-                <div className="t-Text-Bolder">{props.title}</div>
-                <div className="t-SubText-Normal tC-TextSub">{props.theme}</div>
-                <div className="t-SubText-Normal tC-TextSub">{props.followersCount}</div>
-            </TextBox>
-        </Frame>
+        <Link href={link}>
+            <Frame className="bC-BG e-Button">
+                <div style={{width: '75px', height: '75px'}}>
+                    <Artwork>
+                        <Image
+                            src={props.subImage}
+                            width={45}
+                            height={45}
+                            alt='Artwork'
+                        />
+                        <Image className="e-Button"
+                            src={props.image}
+                            width={60}
+                            height={60}
+                            alt='Artwork'
+                        />
+                    </Artwork>
+                </div>
+                <TextBox>
+                    <div className="t-Text-Bolder">{props.title}</div>
+                    <div className="t-SubText-Normal tC-TextSub">{props.theme}</div>
+                    <div className="t-SubText-Normal tC-TextSub">{props.followersCount}</div>
+                </TextBox>
+            </Frame>
+        </Link>
     );
 }
