@@ -57,6 +57,7 @@ export function Buttons(props) {
             <div className="t-SubText-Normal tC-TextSub">コミュニティ</div>
           </TextBox>
         </Frame>
+        <Link href={"/archives/mainlist"}>
         <Frame className="bC-BG e-Button">
           <SVG_book size={30} />
           <TextBox>
@@ -64,6 +65,7 @@ export function Buttons(props) {
             <div className="t-SubText-Normal tC-TextSub">アーカイブ</div>
           </TextBox>
         </Frame>
+        </Link>
       </Contexts>
     </Button>
   );
