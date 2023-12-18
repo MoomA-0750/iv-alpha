@@ -1,4 +1,6 @@
 import { Buttons2 } from "@/components/Assets/Buttons2";
+import { Contexts_User } from "@/components/Assets/List/Contexts/Contexts_User";
+import { ListWrapper } from "@/components/Assets/List/ListWrapper";
 import { MenuBar } from "@/components/MenuBar/MenuBar";
 import { SideBar } from "@/components/SideBar/SideBar";
 import Head from "next/head";
@@ -30,6 +32,13 @@ export default function MainList() {
         <MenuBar title={"アーカイブ"} />
         <MainContents>
           <Buttons2 title={"リスト"} />
+          <ListWrapper
+            title={"リスト"}
+            column={"3"}
+            Contexts={
+              <Contexts_User/>
+            }
+          />
         </MainContents>
       </main>
     </>

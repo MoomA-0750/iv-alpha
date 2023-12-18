@@ -158,7 +158,7 @@ export function Buttons2(props) {
             </GroupArtwork>
           </div>
           <TextBox>
-            <div className="t-Text-Bolder">Group Name</div>
+            <div className="t-Text-Bolder">Have Link</div>
             <div className="t-SubText-Normal tC-TextSub">Theme</div>
             <div className="t-SubText-Normal tC-TextSub">Num of Followers</div>
           </TextBox>

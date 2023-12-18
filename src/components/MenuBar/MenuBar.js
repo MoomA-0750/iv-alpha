@@ -93,11 +93,9 @@ const Label = styled.div`
 `
 
 const SubTitle = styled.div`
-    /* ここにsubTitleのCSSを記述 */
 `
 
 const Title = styled.div`
-    /* ここにtitleのCSSを記述 */
 `
 
 const Right = styled.div`
