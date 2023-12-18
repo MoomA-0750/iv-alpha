@@ -15,6 +15,8 @@ const Contexts = styled.div`
 `;
 
 export function ListWrapper(props) {
+  const column = {props.column};
+
   return (
     <Button>
       <div className="t-BlockTitle-Bolder tC-Text">{props.title}</div>
