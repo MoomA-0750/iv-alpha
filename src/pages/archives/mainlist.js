@@ -58,7 +58,7 @@ export default function Archives_MainList() {
                   followersCount={"Num of Followers"}
                 />
                 <Contexts_User
-                  link={"/archives/users-page/top.js"}
+                  link={"/archives/users-page/top"}
                   userType={"Group"}
                   image={"/DummyAssets/Square/ama_1024.png"}
                   subImage={"/DummyAssets/Square/rusk_1024.png"}
