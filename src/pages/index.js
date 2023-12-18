@@ -39,7 +39,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <div className='wallpaper'></div>
+        <div className='wallpaper'/>
         <SideBar />
         <MenuBar subtitle={"WiP"} title={"IdolVerse"} />
         <MainContents>

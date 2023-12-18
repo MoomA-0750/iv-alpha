@@ -16,7 +16,7 @@ const MainContents = styled.div`
   }
 `;
 
-export default function MainList() {
+export default function Archives_MainList() {
   return (
     <>
       <Head>
@@ -26,7 +26,7 @@ export default function MainList() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <div className="wallpaper"></div>
+        <div className="wallpaper"/>
         <SideBar />
         <MenuBar title={"アーカイブ"} />
         <MainContents>
@@ -36,7 +36,6 @@ export default function MainList() {
             Contexts={
               <>
                 <Contexts_User
-                  link={"/archives/users-page/top.js"}
                   userType={"Group"}
                   image={"/DummyAssets/Square/ama_1024.png"}
                   subImage={"/DummyAssets/Square/rusk_1024.png"}
@@ -59,6 +58,7 @@ export default function MainList() {
                   followersCount={"Num of Followers"}
                 />
                 <Contexts_User
+                  link={"/archives/users-page/top.js"}
                   userType={"Group"}
                   image={"/DummyAssets/Square/ama_1024.png"}
                   subImage={"/DummyAssets/Square/rusk_1024.png"}
