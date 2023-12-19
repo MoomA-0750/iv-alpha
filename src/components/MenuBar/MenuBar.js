@@ -5,6 +5,7 @@ import styled from 'styled-components';
 import { SVG_arrow_left_12, SVG_home_12 } from '@/components/IconPack';
 import { MbContextMenu } from '@/components/MenuBar/ContextMenu';
 import { MbMediaControl } from '@/components/MenuBar/MediaControl';
+import { Social_Bubble } from './Social_Bubble';
 
 const MenuBarBody = styled.div`
     position: fixed;
@@ -34,7 +35,7 @@ const Center = styled.div`
     overflow: visible;
 `
 
-const Unko = styled.div`
+const Spacer = styled.div`
     position: absolute;
     width: 100%;
     top: -5px;
@@ -162,10 +163,11 @@ export function MenuBar(props) {
                 </NavButtons>
             </Left>
             <Center>
-                <Unko>
+                <Spacer>
                     <MbContextMenu/>
                     <MbContextMenu/>
-                </Unko>
+                    <Social_Bubble/>
+                </Spacer>
             </Center>
             <Right className='bC-BGSub e-Box'>
                 <Status className='bC-BG e-Button'>

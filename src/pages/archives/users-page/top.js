@@ -1,4 +1,5 @@
 import { MenuBar } from '@/components/MenuBar/MenuBar'
+import { Social_Bubble } from '@/components/MenuBar/Social_Bubble'
 import { SideBar } from '@/components/SideBar/SideBar'
 import Head from 'next/head'
 import styled from 'styled-components'
@@ -17,14 +18,21 @@ const Wallpaper = styled.div`
     height: 100vh;
     background-position: center;
     background-size: cover;
-    /* background: var(--BG, linear-gradient(180deg, #80D9FF 0%, rgba(128, 217, 255, 0.00) 32.81%), radial-gradient(100% 100% at 50% 0%, #80D9FF 0%, #DAF6FF 69.27%, #FFF2F8 100%)); */
     z-index: -100;
 `
 
-const TextBox = styled.div`
+const TitleBox = styled.div`
+    display: inline-flex;
+    flex-direction: column;
     position: absolute;
     left: 20px;
     bottom: 40px;
+    gap: 30px;
+`
+
+const TextBox = styled.div`
+    display: flex;
+    flex-direction: column;
 `
 
 export default function Archives_User_Top() {
@@ -43,10 +51,13 @@ export default function Archives_User_Top() {
             <SideBar />
             <MenuBar subtitle={"WiP"} title={"IdolVerse"} />
             <MainContents>
-                <TextBox>
-                    <div class="t-FullScreen-Title tC-fff">Group<br/>Naaaaame</div>
-                    <div class="t-BlockTitle-Bolder tC-Dark-Text">300人のフォロワー</div>
-                </TextBox>
+                <TitleBox>
+                    <TextBox>
+                        <div class="t-FullScreen-Title tC-fff">Group<br/>Naaaaame</div>
+                        <div class="t-BlockTitle-Bolder tC-Dark-Text">300人のフォロワー</div>
+                    </TextBox>
+                    <Social_Bubble/>
+                </TitleBox>
             </MainContents>
         </main>
         </>
