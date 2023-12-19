@@ -22,7 +22,7 @@ const Wallpaper = styled.div`
 `
 
 const TitleBox = styled.div`
-    display: inline-flex;
+    display: flex;
     flex-direction: column;
     position: absolute;
     left: 20px;
@@ -33,6 +33,10 @@ const TitleBox = styled.div`
 const TextBox = styled.div`
     display: flex;
     flex-direction: column;
+`
+
+const WidthAdjust = styled.div`
+display: flex;
 `
 
 export default function Archives_User_Top() {
@@ -56,7 +60,7 @@ export default function Archives_User_Top() {
                         <div class="t-FullScreen-Title tC-fff">Group<br/>Naaaaame</div>
                         <div class="t-BlockTitle-Bolder tC-Dark-Text">300人のフォロワー</div>
                     </TextBox>
-                    <Social_Bubble/>
+                    <WidthAdjust><Social_Bubble/></WidthAdjust>
                 </TitleBox>
             </MainContents>
         </main>

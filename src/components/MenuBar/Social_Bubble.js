@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { MbMediaControl } from '@/components/MenuBar/MediaControl';
+import { SVG_Social_X, SVG_Social_YouTube, SVG_Social_Booth } from '../IconPack';
 
 const Frame = styled.div`
     height: 42px;
@@ -9,11 +9,10 @@ const Frame = styled.div`
     gap: 6px;
     align-self: stretch;
     border-radius: 28px;
-    z-index: 1;
     flex-shrink: 0;
 `
 
-const Status = styled.div`
+const Button = styled.div`
     display: flex;
     padding: 0px 12px;
     justify-content: flex-end;
@@ -25,15 +24,11 @@ const Status = styled.div`
 
 export function Social_Bubble(props) {
     return (
-        <div>
-            <Frame className='bC-BGSub e-Box'>
-                <Status className='bC-BG e-Button'>
-                    <div className='t-Text-Bolder'>time</div>
-                </Status>
-                <Status className='bC-BG e-Button'>
-                    <div className='t-Text-Bolder'>time</div>
-                </Status>
-            </Frame>
-        </div>
+        <Frame className='bC-BGSub e-Box'>
+            <Button className='bC-BG e-Button t-Text-Bolder'>フォロー</Button>
+            <Button className='bC-BG e-Button t-Text-Bolder'><SVG_Social_X/></Button>
+            <Button className='bC-BG e-Button t-Text-Bolder'><SVG_Social_YouTube/></Button>
+            <Button className='bC-BG e-Button t-Text-Bolder'><SVG_Social_Booth/></Button>
+        </Frame>
     )
 }
