@@ -3,9 +3,6 @@ import Router from 'next/router'
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import { SVG_arrow_left_12, SVG_home_12 } from '@/components/IconPack';
-import { MbContextMenu } from '@/components/MenuBar/ContextMenu';
-import { MbMediaControl } from '@/components/MenuBar/MediaControl';
-import { Social_Bubble } from './Social_Bubble';
 
 const MenuBarBody = styled.div`
     position: fixed;
@@ -164,9 +161,7 @@ export function MenuBar(props) {
             </Left>
             <Center>
                 <Spacer>
-                    <MbContextMenu/>
-                    <MbContextMenu/>
-                    <Social_Bubble/>
+                    {props.contexts}
                 </Spacer>
             </Center>
             <Right className='bC-BGSub e-Box'>
@@ -176,7 +171,7 @@ export function MenuBar(props) {
                         <SubTitle className='t-SubText-Normal tC-TextSub'>{date}</SubTitle>
                     </CaleTime>
                 </Status>
-                <MbMediaControl/>
+                {props.right}
             </Right>
         </MenuBarBody>
     )

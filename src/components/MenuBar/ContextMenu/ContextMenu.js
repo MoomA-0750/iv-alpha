@@ -26,18 +26,13 @@ align-items: center;
 border-radius: 50px;
 `
 
-export function MbContextMenu() {
+export function MbContextMenu(props) {
     return (
         <ContextMenu className='bC-BGSub e-Box'>
             <Label>
-                <div className='t-SubText2-Normal tC-TextSub'>表示方法</div>
+                <div className='t-SubText2-Normal tC-TextSub'>{props.label}</div>
             </Label>
-            <Context className='bC-BG e-Button'>トップ</Context>
-            <Context>ギャラリー</Context>
-            <Context>メンバー</Context>
-            <Context>イベント</Context>
-            <Context>リリース</Context>
-            <Context>ログ</Context>
+            {props.contexts}
         </ContextMenu>
     )
 }
