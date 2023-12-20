@@ -1,3 +1,4 @@
+import { Contexts_Picture } from '@/components/Assets/List/Contexts/Contexts_Picture'
 import { Contexts_User } from '@/components/Assets/List/Contexts/Contexts_User'
 import { ListWrapper } from '@/components/Assets/List/ListWrapper'
 import { MbContextMenu_Context } from '@/components/MenuBar/ContextMenu/Context'
@@ -16,7 +17,7 @@ const MainContents = styled.div`
 
     @media (max-width: 1260px) {
         margin-left: 120px;
-  }
+    }
 `
 
 const Wallpaper = styled.div`
@@ -30,24 +31,6 @@ const Wallpaper = styled.div`
     z-index: -100;
 
     filter: blur(12.5px);
-`
-
-const TitleBox = styled.div`
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    left: 20px;
-    bottom: 40px;
-    gap: 30px;
-`
-
-const TextBox = styled.div`
-    display: flex;
-    flex-direction: column;
-`
-
-const WidthAdjust = styled.div`
-display: flex;
 `
 
 export default function Archives_User_Gallery() {
@@ -120,13 +103,8 @@ export default function Archives_User_Gallery() {
                     column="4"
                     Contexts={
                         <>
-                            <Contexts_User
-                                userType={"Group"}
-                                image={"/DummyAssets/Square/ama_1024.png"}
-                                subImage={"/DummyAssets/Square/rusk_1024.png"}
-                                title={"Group Name"}
-                                theme={"Theme"}
-                                followersCount={"Num of Followers"}
+                            <Contexts_Picture
+                                image={"/DummyAssets/f61b07f3908bff741f3bc946eda24bd2.png"}
                             />
                             <Contexts_User
                                 userType={"Group"}
