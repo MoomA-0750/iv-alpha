@@ -1,5 +1,4 @@
 import { Contexts_Picture } from '@/components/Assets/List/Contexts/Contexts_Picture'
-import { Contexts_User } from '@/components/Assets/List/Contexts/Contexts_User'
 import { ListWrapper } from '@/components/Assets/List/ListWrapper'
 import { MbContextMenu_Context } from '@/components/MenuBar/ContextMenu/Context'
 import { MbContextMenu } from '@/components/MenuBar/ContextMenu/ContextMenu'
@@ -15,9 +14,19 @@ const MainContents = styled.div`
     top: 95px;
     margin: 0 auto;
 
+    display: grid;
+
     @media (max-width: 1260px) {
         margin-left: 120px;
     }
+`
+
+const SubColumn = styled.div`
+    width: 270px;
+`
+
+const MainColumn = styled.div`
+    max-width: 1020px;
 `
 
 const Wallpaper = styled.div`
@@ -98,32 +107,37 @@ export default function Archives_User_Gallery() {
                 }
             />
             <MainContents>
-                <ListWrapper
-                    title="7日以内"
-                    column="4"
-                    Contexts={
-                        <>
-                            <Contexts_Picture
-                                image={"/DummyAssets/f61b07f3908bff741f3bc946eda24bd2.png"}
-                            />
-                            <Contexts_Picture
-                                image={"/DummyAssets/52e59d9a59265fac16a891cd33b98272.png"}
-                            />
-                            <Contexts_Picture
-                                image={"/DummyAssets/112a843d79954b04cfbb8b38530639a5.png"}
-                            />
-                            <Contexts_Picture
-                                image={"/DummyAssets/f61b07f3908bff741f3bc946eda24bd2.png"}
-                            />
-                            <Contexts_Picture
-                                image={"/DummyAssets/52e59d9a59265fac16a891cd33b98272.png"}
-                            />
-                            <Contexts_Picture
-                                image={"/DummyAssets/112a843d79954b04cfbb8b38530639a5.png"}
-                            />
-                        </>
-                    }
-                />
+                <SubColumn>
+
+                </SubColumn>
+                <MainColumn>
+                    <ListWrapper
+                        title="7日以内"
+                        column="4"
+                        Contexts={
+                            <>
+                                <Contexts_Picture
+                                    image={"/DummyAssets/f61b07f3908bff741f3bc946eda24bd2.png"}
+                                />
+                                <Contexts_Picture
+                                    image={"/DummyAssets/52e59d9a59265fac16a891cd33b98272.png"}
+                                />
+                                <Contexts_Picture
+                                    image={"/DummyAssets/112a843d79954b04cfbb8b38530639a5.png"}
+                                />
+                                <Contexts_Picture
+                                    image={"/DummyAssets/f61b07f3908bff741f3bc946eda24bd2.png"}
+                                />
+                                <Contexts_Picture
+                                    image={"/DummyAssets/52e59d9a59265fac16a891cd33b98272.png"}
+                                />
+                                <Contexts_Picture
+                                    image={"/DummyAssets/112a843d79954b04cfbb8b38530639a5.png"}
+                                />
+                            </>
+                        }
+                    />
+                </MainColumn>
             </MainContents>
         </main>
         </>
