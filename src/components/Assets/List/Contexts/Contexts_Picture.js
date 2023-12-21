@@ -3,7 +3,8 @@ import Image from "next/image";
 import styled from "styled-components";
 
 const Frame = styled.div`
-    max-width: 235.75px;
+    position: relative;
+    max-width: 238.75px;
     aspect-ratio: 1 / 1;
     display: grid;
     align-items: center;
@@ -18,13 +19,12 @@ export function Contexts_Picture(props) {
     return (
         <Link href={link}>
             <Frame className="bC-BG e-Button">
-                {/* <Image className="e-Button" style={`object-fit:cover;`}
+                <Image
+                    layout="fill"
                     src={props.image}
-                    width={1920}
-                    height={1080}
+                    objectFit="cover"
                     alt='Picture'
-                /> */}
-                <img src={props.image} style={`object-fit:cover;`}/>
+                />
             </Frame>
         </Link>
     );

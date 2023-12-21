@@ -106,29 +106,14 @@ export default function Archives_User_Gallery() {
                             <Contexts_Picture
                                 image={"/DummyAssets/f61b07f3908bff741f3bc946eda24bd2.png"}
                             />
-                            <Contexts_User
-                                userType={"Group"}
-                                image={"/DummyAssets/Square/ama_1024.png"}
-                                subImage={"/DummyAssets/Square/rusk_1024.png"}
-                                title={"Group Name"}
-                                theme={"Theme"}
-                                followersCount={"Num of Followers"}
+                            <Contexts_Picture
+                                image={"/DummyAssets/f61b07f3908bff741f3bc946eda24bd2.png"}
                             />
-                            <Contexts_User
-                                userType={"Group"}
-                                image={"/DummyAssets/Square/ama_1024.png"}
-                                subImage={"/DummyAssets/Square/rusk_1024.png"}
-                                title={"Group Name"}
-                                theme={"Theme"}
-                                followersCount={"Num of Followers"}
+                            <Contexts_Picture
+                                image={"/DummyAssets/f61b07f3908bff741f3bc946eda24bd2.png"}
                             />
-                            <Contexts_User
-                                userType={"Group"}
-                                image={"/DummyAssets/Square/ama_1024.png"}
-                                subImage={"/DummyAssets/Square/rusk_1024.png"}
-                                title={"Group Name"}
-                                theme={"Theme"}
-                                followersCount={"Num of Followers"}
+                            <Contexts_Picture
+                                image={"/DummyAssets/f61b07f3908bff741f3bc946eda24bd2.png"}
                             />
                         </>
                     }
