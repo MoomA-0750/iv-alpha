@@ -107,13 +107,19 @@ export default function Archives_User_Gallery() {
                                 image={"/DummyAssets/f61b07f3908bff741f3bc946eda24bd2.png"}
                             />
                             <Contexts_Picture
-                                image={"/DummyAssets/f61b07f3908bff741f3bc946eda24bd2.png"}
+                                image={"/DummyAssets/52e59d9a59265fac16a891cd33b98272.png"}
+                            />
+                            <Contexts_Picture
+                                image={"/DummyAssets/112a843d79954b04cfbb8b38530639a5.png"}
                             />
                             <Contexts_Picture
                                 image={"/DummyAssets/f61b07f3908bff741f3bc946eda24bd2.png"}
                             />
                             <Contexts_Picture
-                                image={"/DummyAssets/f61b07f3908bff741f3bc946eda24bd2.png"}
+                                image={"/DummyAssets/52e59d9a59265fac16a891cd33b98272.png"}
+                            />
+                            <Contexts_Picture
+                                image={"/DummyAssets/112a843d79954b04cfbb8b38530639a5.png"}
                             />
                         </>
                     }
