@@ -13,14 +13,6 @@ const Frame = styled.div`
     overflow: hidden;
 `;
 
-const Pic = styled.div`
-    aspect-ratio: 1 / 1;
-    display: grid;
-    align-items: center;
-    border-radius: 5px;
-    overflow: hidden;
-`;
-
 const TextBox = styled.div`
     display: flex;
     flex-direction: column;
@@ -34,7 +26,6 @@ export function Contexts_SubColumn(props) {
     return (
         <Link href={link}>
             <Frame className="bC-BG e-Button">
-                {/* <Pic></Pic> */}
                 <Contexts_Picture
                     image={"/DummyAssets/f61b07f3908bff741f3bc946eda24bd2.png"}
                 />
