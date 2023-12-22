@@ -9,16 +9,16 @@ const Frame = styled.div`
     display: grid;
     align-items: center;
     gap: 5px;
-    border-radius: 10px;
     overflow: hidden;
 `;
 
 export function Contexts_Picture(props) {
     const link = props.link || "/default-link";
+    const borderRadius = props.borderRadius || "10px";
 
     return (
         <Link href={link}>
-            <Frame className="bC-BG e-Button">
+            <Frame className="bC-BG e-Button" style={{borderRadius: `${borderRadius}`}}>
                 <Image
                     layout="fill"
                     src={props.image}

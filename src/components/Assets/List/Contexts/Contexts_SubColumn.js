@@ -1,5 +1,6 @@
 import Link from "next/link";
 import styled from "styled-components";
+import { Contexts_Picture } from "./Contexts_Picture";
 
 const Frame = styled.div`
     height: 40px;
@@ -33,7 +34,10 @@ export function Contexts_SubColumn(props) {
     return (
         <Link href={link}>
             <Frame className="bC-BG e-Button">
-                <Pic></Pic>
+                {/* <Pic></Pic> */}
+                <Contexts_Picture
+                    image={"/DummyAssets/f61b07f3908bff741f3bc946eda24bd2.png"}
+                />
                 <TextBox>
                     <div className="t-Text-Bolder">{props.title}</div>
                     <div className="t-SubText-Normal tC-TextSub">{props.subTitle}</div>

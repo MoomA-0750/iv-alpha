@@ -9,17 +9,17 @@ const Button = styled.div`
 const Contexts = styled.div`
   display: grid;
   width: calc(100% - 20px);
-  gap: 15px;
   border-radius: 20px;
   padding: 10px;
 `;
 
 export function ListWrapper(props) {
+  const gap = props.gap || "15px";
 
   return (
     <Button>
       <div className="t-BlockTitle-Bolder tC-Text">{props.title}</div>
-      <Contexts className="bC-BGSub e-Box" style={{gridTemplateColumns: `repeat(${props.column}, 1fr)`}}>
+      <Contexts className="bC-BGSub e-Box" style={{gridTemplateColumns: `repeat(${props.column}, 1fr)`, gap: `${gap}`}}>
         {props.Contexts}
       </Contexts>
     </Button>

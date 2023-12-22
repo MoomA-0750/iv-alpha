@@ -109,7 +109,8 @@ export default function Archives_User_Gallery() {
           <SubColumn>
             <ListWrapper
               title="asdf"
-              colimn="1"
+              column="1"
+              gap="10px"
               Contexts={
                 <>
                   <Contexts_SubColumn
