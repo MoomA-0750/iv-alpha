@@ -37,6 +37,7 @@ export function Contexts_SubColumn(props) {
     return (
         <Link href={link}>
             <Frame className="bC-BG e-Button">
+<<<<<<< HEAD
                 <Icon className="bC-BG e-Button">
                     <Image
                         layout="fill"
@@ -45,6 +46,11 @@ export function Contexts_SubColumn(props) {
                         alt='Picture'
                     />
                 </Icon>
+=======
+                <Contexts_Picture
+                    image={props.image}
+                />
+>>>>>>> f415256e23bcf0d78c9dd396fad27bab96524006
                 <TextBox>
                     <div className="t-Text-Bolder">{props.title}</div>
                     <div className="t-SubText-Normal tC-TextSub">{props.subTitle}</div>
