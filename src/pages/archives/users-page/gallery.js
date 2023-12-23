@@ -114,6 +114,7 @@ export default function Archives_User_Gallery() {
               Contexts={
                 <>
                   <Contexts_SubColumn
+                    image={"/DummyAssets/f61b07f3908bff741f3bc946eda24bd2.png"}
                     title={"予定を見る"}
                     subTitle={"イベントカレンダー"}
                   />

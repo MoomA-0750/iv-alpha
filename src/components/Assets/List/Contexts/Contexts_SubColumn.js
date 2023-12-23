@@ -1,12 +1,12 @@
 import Link from "next/link";
+import Image from "next/image";
 import styled from "styled-components";
-import { Contexts_Picture } from "./Contexts_Picture";
 
 const Frame = styled.div`
     height: 40px;
     padding: 5px;
     display: grid;
-    grid-template-columns: max-content 1fr;
+    grid-template-columns: 40px 1fr;
     align-items: center;
     gap: 5px;
     border-radius: 10px;
@@ -21,14 +21,30 @@ const TextBox = styled.div`
     gap: 2px;
 `;
 
+const Icon = styled.div`
+    position: relative;
+    max-width: 238.75px;
+    border-radius: 5px;
+    aspect-ratio: 1 / 1;
+    display: grid;
+    align-items: center;
+    gap: 5px;
+    overflow: hidden;
+`;
+
 export function Contexts_SubColumn(props) {
     const link = props.link || "/default-link";
     return (
         <Link href={link}>
             <Frame className="bC-BG e-Button">
-                <Contexts_Picture
-                    image={"/DummyAssets/f61b07f3908bff741f3bc946eda24bd2.png"}
-                />
+                <Icon className="bC-BG e-Button">
+                    <Image
+                        layout="fill"
+                        src={props.image}
+                        objectFit="cover"
+                        alt='Picture'
+                    />
+                </Icon>
                 <TextBox>
                     <div className="t-Text-Bolder">{props.title}</div>
                     <div className="t-SubText-Normal tC-TextSub">{props.subTitle}</div>
