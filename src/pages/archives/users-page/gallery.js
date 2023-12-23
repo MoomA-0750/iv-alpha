@@ -115,12 +115,11 @@ export default function Archives_User_Gallery() {
                 <>
                   <Contexts_SubColumn
                     image={"/DummyAssets/f61b07f3908bff741f3bc946eda24bd2.png"}
-                    title={"予定を見る"}
-                    subTitle={"イベントカレンダー"}
+                    title={"ちょ〜初期💭"}
                   />
                   <Contexts_SubColumn
-                    title={"予定を見る"}
-                    subTitle={"イベントカレンダー"}
+                    image={"/DummyAssets/dae8b6cabc9eda457732830b7066c972.png"}
+                    title={"最強にかわいい！💕"}
                   />
                 </>
               }
