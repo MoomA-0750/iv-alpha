@@ -27,7 +27,7 @@ export function Contexts_SubColumn(props) {
         <Link href={link}>
             <Frame className="bC-BG e-Button">
                 <Contexts_Picture
-                    image={"/DummyAssets/f61b07f3908bff741f3bc946eda24bd2.png"}
+                    image={props.image}
                 />
                 <TextBox>
                     <div className="t-Text-Bolder">{props.title}</div>
