@@ -108,6 +108,17 @@ export default function Archives_User_Gallery() {
         <MainContents>
           <SubColumn>
             <ListWrapper
+              column="1"
+              gap="0px"
+              Contexts={
+                <>
+                  <Contexts_SubColumn
+                    title={"すべての写真"}
+                  />
+                </>
+              }
+            />
+            <ListWrapper
               title="メンバーズチョイス"
               column="1"
               gap="10px"
