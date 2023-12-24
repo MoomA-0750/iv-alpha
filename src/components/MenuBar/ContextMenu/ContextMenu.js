@@ -11,22 +11,17 @@ const ContextMenu = styled.div`
     max-height: 42px;
 `
 
-const Label = styled.div`
-padding: 0 6px;
+const LabelShow = styled.div`
+    padding: 0 6px;
 `
 
-const Context = styled.div`
-padding: 0 14px;
-display: flex;
-height: 50px;
-padding: 0 14px;
-
-justify-content: center;
-align-items: center;
-border-radius: 50px;
+const LabelHidden = styled.div`
+    display: none;
 `
 
 export function MbContextMenu(props) {
+    const Label = !props.label ? LabelHidden : LabelShow;
+
     return (
         <ContextMenu className='bC-BGSub e-Box'>
             <Label>

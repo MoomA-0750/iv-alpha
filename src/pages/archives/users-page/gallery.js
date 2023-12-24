@@ -22,6 +22,9 @@ const MainContents = styled.div`
 
 const SubColumn = styled.div`
   width: 270px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 `;
 
 const MainColumn = styled.div`
