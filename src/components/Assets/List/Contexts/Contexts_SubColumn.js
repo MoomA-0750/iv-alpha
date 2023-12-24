@@ -6,7 +6,7 @@ const Frame = styled.div`
     height: 40px;
     padding: 5px;
     display: grid;
-    grid-template-columns: 40px 1fr;
+    grid-template-columns: max-content 1fr;
     align-items: center;
     gap: 5px;
     border-radius: 10px;
@@ -21,9 +21,9 @@ const TextBox = styled.div`
     gap: 2px;
 `;
 
-const Icon = styled.div`
+const IconShow = styled.div`
     position: relative;
-    max-width: 238.75px;
+    width: 40px;
     border-radius: 5px;
     aspect-ratio: 1 / 1;
     display: grid;
@@ -32,8 +32,14 @@ const Icon = styled.div`
     overflow: hidden;
 `;
 
+const IconHidden = styled.div`
+    display: none;
+`;
+
 export function Contexts_SubColumn(props) {
     const link = props.link || "/default-link";
+    const Icon = !props.image ? IconHidden : IconShow;
+
     return (
         <Link href={link}>
             <Frame className="bC-BG e-Button">
