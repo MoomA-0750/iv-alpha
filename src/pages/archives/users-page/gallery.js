@@ -84,7 +84,7 @@ export default function Archives_User_Gallery() {
                     <MbContextMenu_Context
                       selected={false}
                       text={"メンバー"}
-                      link={"/archives/users-page/top"}
+                      link={"/archives/users-page/members"}
                     />
                     <MbContextMenu_Context
                       selected={false}
