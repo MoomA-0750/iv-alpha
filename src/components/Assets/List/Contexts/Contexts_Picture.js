@@ -5,6 +5,7 @@ import styled from "styled-components";
 const Frame = styled.div`
     position: relative;
     max-width: 238.75px;
+    border-radius: 10px;
     aspect-ratio: 1 / 1;
     display: grid;
     align-items: center;
@@ -14,11 +15,10 @@ const Frame = styled.div`
 
 export function Contexts_Picture(props) {
     const link = props.link || "/default-link";
-    const borderRadius = props.borderRadius || "10px";
 
     return (
         <Link href={link}>
-            <Frame className="bC-BG e-Button" style={{borderRadius: `${borderRadius}`}}>
+            <Frame className="bC-BG e-Button">
                 <Image
                     layout="fill"
                     src={props.image}
