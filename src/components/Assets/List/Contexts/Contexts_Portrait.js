@@ -15,10 +15,18 @@ const Frame = styled.div`
 
 export function Contexts_Portrait(props) {
     const link = props.link || "/default-link";
+    const color = props.color || "";
 
     return (
         <Link href={link}>
             <Frame className="bC-BG e-Button">
+                <Image
+                    layout="fill"
+                    src={props.bg}
+                    objectFit="cover"
+                    alt='Picture'
+                />
+                <div style={{fontWeight:"800", color:`${color}`, position:"absolute", top:"40px", fontSize:"40px"}}>{props.title}</div>
                 <Image
                     layout="fill"
                     src={props.image}
