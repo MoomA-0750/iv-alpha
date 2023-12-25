@@ -34,6 +34,6 @@ export function Contexts_Portrait(props) {
                     alt='Picture'
                 />
             </Frame>
-        </Link>
+        </Link> 
     );
 }
