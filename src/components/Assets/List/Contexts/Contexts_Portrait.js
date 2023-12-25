@@ -27,7 +27,7 @@ export function Contexts_Portrait(props) {
                     alt='Picture'
                 />
                 <div style={{fontWeight:"800", color:`${color}`, position:"absolute", top:"40px", fontSize:"40px"}}>{props.title}</div>
-                <Image
+                <Image style={{position:"absolute", top:`${props.top}`, left:`${props.left}`, scale:`${props.scale}`}}
                     layout="fill"
                     src={props.image}
                     objectFit="cover"

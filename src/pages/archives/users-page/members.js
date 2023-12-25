@@ -106,6 +106,7 @@ export default function Archives_User_Members() {
                 <Contexts_Portrait
                   bg={"/DummyAssets/Back/2e26027670615a6732f11ba40f040f6f.png"}
                   image={"/DummyAssets/Portrait/kar.png"}
+                  top="5px"
                   title={"Nameなまえ"}
                   color={"#DAF6FF"}
                 />
