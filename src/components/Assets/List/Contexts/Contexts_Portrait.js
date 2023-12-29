@@ -16,6 +16,7 @@ const Frame = styled.div`
 export function Contexts_Portrait(props) {
     const link = props.link || "/default-link";
     const color = props.color || "";
+    const fOpacity = props.fOpacity || "0";
 
     return (
         <Link href={link}>
@@ -26,12 +27,13 @@ export function Contexts_Portrait(props) {
                     style={{objectFit: "cover"}}
                     alt='Picture'
                 />
-                {/* <div style={{fontWeight:"800", color:`${color}`, position:"absolute", top:"40px", fontSize:"40px"}}>{props.title}</div> */}
+                <div style={{fontWeight:"800", color:`${color}`, position:"absolute", width:"100%", textAlign:"center", top:"40px", fontSize:"40px"}}>{props.title}</div>
                 <Image style={{objectFit: "contain", position:"absolute", top:`${props.top}`, left:`${props.left}`, scale:`${props.scale}`}}
                     layout="fill"
                     src={props.image}
                     alt='Picture'
                 />
+                <div style={{fontWeight:"800", color:`${color}`, position:"absolute", width:"100%", textAlign:"center", top:"40px", fontSize:"40px", opacity:`${fOpacity}`}}>{props.title}</div>
             </Frame>
         </Link>
     );

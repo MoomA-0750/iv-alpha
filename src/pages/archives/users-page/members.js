@@ -107,14 +107,26 @@ export default function Archives_User_Members() {
                   bg={"/DummyAssets/Back/2e26027670615a6732f11ba40f040f6f.png"}
                   image={"/DummyAssets/Portrait/kar.png"}
                   top="5px"
-                  title={"Nameなまえ"}
+                  left="-10px"
+                  scale="2.3"
+                  title={"Name"}
                   color={"#DAF6FF"}
                 />
                 <Contexts_Portrait
                   bg={"/DummyAssets/Back/086d1686f21f97416f38cf193c3bca54.png"}
                   image={"/DummyAssets/Portrait/mil.png"}
                   top="0px"
-                  scale="0.7"
+                  scale="1"
+                  title={"なまえ"}
+                  color={"#FF8787"}
+                  fOpacity="0.4"
+                />
+                <Contexts_Portrait
+                  bg={"/DummyAssets/Back/2e26027670615a6732f11ba40f040f6f.png"}
+                  image={"/DummyAssets/Portrait/kar.png"}
+                  top="5px"
+                  left="-10px"
+                  scale="2.3"
                   title={"Nameなまえ"}
                   color={"#DAF6FF"}
                 />
@@ -122,6 +134,8 @@ export default function Archives_User_Members() {
                   bg={"/DummyAssets/Back/2e26027670615a6732f11ba40f040f6f.png"}
                   image={"/DummyAssets/Portrait/kar.png"}
                   top="5px"
+                  left="-10px"
+                  scale="2.3"
                   title={"Nameなまえ"}
                   color={"#DAF6FF"}
                 />
@@ -129,6 +143,8 @@ export default function Archives_User_Members() {
                   bg={"/DummyAssets/Back/2e26027670615a6732f11ba40f040f6f.png"}
                   image={"/DummyAssets/Portrait/kar.png"}
                   top="5px"
+                  left="-10px"
+                  scale="2.3"
                   title={"Nameなまえ"}
                   color={"#DAF6FF"}
                 />
@@ -136,13 +152,8 @@ export default function Archives_User_Members() {
                   bg={"/DummyAssets/Back/2e26027670615a6732f11ba40f040f6f.png"}
                   image={"/DummyAssets/Portrait/kar.png"}
                   top="5px"
-                  title={"Nameなまえ"}
-                  color={"#DAF6FF"}
-                />
-                <Contexts_Portrait
-                  bg={"/DummyAssets/Back/2e26027670615a6732f11ba40f040f6f.png"}
-                  image={"/DummyAssets/Portrait/kar.png"}
-                  top="5px"
+                  left="-10px"
+                  scale="2.3"
                   title={"Nameなまえ"}
                   color={"#DAF6FF"}
                 />

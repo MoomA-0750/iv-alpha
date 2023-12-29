@@ -25,28 +25,28 @@ export function BannerSlide(props) {
             <Contexts>
                 <BContexts_Def
                     image="/DummyAssets/f61b07f3908bff741f3bc946eda24bd2.png"
-                    title={<>asdf<br/>記事タイトルほげほげ</>}
+                    title={<>asdf<br/>記事タイトル</>}
                     userIcon="/DummyAssets/Square/ama_1024.png"
                     userName="User Name"
                     date="6/14 (水)"
                 />
                 <BContexts_Def
                     image="/DummyAssets/f61b07f3908bff741f3bc946eda24bd2.png"
-                    title={<>asdf<br/>記事タイトルほげほげ</>}
+                    title={<>asdf<br/>記事タイトル</>}
                     userIcon="/DummyAssets/Square/ama_1024.png"
                     userName="User Name"
                     date="6/14 (水)"
                 />
                 <BContexts_Def
                     image="/DummyAssets/f61b07f3908bff741f3bc946eda24bd2.png"
-                    title={<>asdf<br/>記事タイトルほげほげ</>}
+                    title={<>asdf<br/>記事タイトル</>}
                     userIcon="/DummyAssets/Square/ama_1024.png"
                     userName="User Name"
                     date="6/14 (水)"
                 />
                 <BContexts_Def
                     image="/DummyAssets/f61b07f3908bff741f3bc946eda24bd2.png"
-                    title={<>asdf<br/>記事タイトルほげほげ</>}
+                    title={<>asdf<br/>記事タイトル</>}
                     userIcon="/DummyAssets/Square/ama_1024.png"
                     userName="User Name"
                     date="6/14 (水)"
