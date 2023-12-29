@@ -111,19 +111,40 @@ export default function Archives_User_Members() {
                   color={"#DAF6FF"}
                 />
                 <Contexts_Portrait
-                  image={"/DummyAssets/52e59d9a59265fac16a891cd33b98272.png"}
+                  bg={"/DummyAssets/Back/086d1686f21f97416f38cf193c3bca54.png"}
+                  image={"/DummyAssets/Portrait/mil.png"}
+                  top="0px"
+                  scale="0.7"
+                  title={"Nameなまえ"}
+                  color={"#DAF6FF"}
                 />
                 <Contexts_Portrait
-                  image={"/DummyAssets/112a843d79954b04cfbb8b38530639a5.png"}
+                  bg={"/DummyAssets/Back/2e26027670615a6732f11ba40f040f6f.png"}
+                  image={"/DummyAssets/Portrait/kar.png"}
+                  top="5px"
+                  title={"Nameなまえ"}
+                  color={"#DAF6FF"}
                 />
                 <Contexts_Portrait
-                  image={"/DummyAssets/f61b07f3908bff741f3bc946eda24bd2.png"}
+                  bg={"/DummyAssets/Back/2e26027670615a6732f11ba40f040f6f.png"}
+                  image={"/DummyAssets/Portrait/kar.png"}
+                  top="5px"
+                  title={"Nameなまえ"}
+                  color={"#DAF6FF"}
                 />
                 <Contexts_Portrait
-                  image={"/DummyAssets/52e59d9a59265fac16a891cd33b98272.png"}
+                  bg={"/DummyAssets/Back/2e26027670615a6732f11ba40f040f6f.png"}
+                  image={"/DummyAssets/Portrait/kar.png"}
+                  top="5px"
+                  title={"Nameなまえ"}
+                  color={"#DAF6FF"}
                 />
                 <Contexts_Portrait
-                  image={"/DummyAssets/112a843d79954b04cfbb8b38530639a5.png"}
+                  bg={"/DummyAssets/Back/2e26027670615a6732f11ba40f040f6f.png"}
+                  image={"/DummyAssets/Portrait/kar.png"}
+                  top="5px"
+                  title={"Nameなまえ"}
+                  color={"#DAF6FF"}
                 />
               </>
             }
