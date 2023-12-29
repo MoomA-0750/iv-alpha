@@ -11,6 +11,14 @@ const Contexts = styled.div`
   width: calc(100% - 20px);
   border-radius: 20px;
   padding: 10px;
+
+  > *{
+    transition: all 0.3s ease;
+  }
+
+  > *:hover{
+    scale: 1.05;
+  }
 `;
 
 export function ListWrapper(props) {

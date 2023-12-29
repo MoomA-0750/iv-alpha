@@ -22,6 +22,7 @@ const TextBox = styled.div`
 
 export function Contexts_Def(props) {
     const link = props.link || "/default-link";
+
     return (
         <Link href={link}>
             <Frame className="bC-BG e-Button">
