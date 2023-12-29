@@ -1,4 +1,4 @@
-import Link from 'next/link';
+    import Link from 'next/link';
 import styled from 'styled-components';
 import { SVG_search_24, SVG_people_checkmark_24, SVG_calendar, SVG_people_community_24, SVG_book } from '../IconPack';
 import { ListWrapper } from '../Assets/List/ListWrapper';
@@ -61,16 +61,15 @@ export function SideBar() {
                             svg={<SVG_calendar size={30} />}
                             label={<><span>イベント</span><br/><span>カレンダー</span></>}
                         />
-                        <Context className='bC-BG e-Button'>
-                            <SVG_people_community_24 size={30} />
-                            <Label className='tC-Text t-10pxNormal'>コミュニティ</Label>
-                        </Context>
-                        <Link href={"/archives/mainlist"}>
-                            <Context className='bC-BG e-Button'>
-                                <SVG_book size={30} />
-                                <Label className='tC-Text t-10pxNormal'>アーカイブ</Label>
-                            </Context>
-                        </Link>
+                        <Contexts_SideBar
+                            svg={<SVG_people_community_24 size={30} />}
+                            label={"コミュニティ"}
+                        />
+                        <Contexts_SideBar
+                            svg={<SVG_book size={30} />}
+                            label={"アーカイブ"}
+                            link={"/archives/mainlist"}
+                        />
                         </>
                     }
             />
