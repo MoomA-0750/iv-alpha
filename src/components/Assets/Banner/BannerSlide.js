@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { BContexts_Def } from './Contexts/BContexts_Def';
 
 const Banner = styled.div`
     width: 100%;
@@ -23,34 +22,7 @@ export function BannerSlide(props) {
         <Banner>
             <div className='t-BlockTitle-Bolder'>{props.title}</div>
             <Contexts>
-                <BContexts_Def
-                    image="/DummyAssets/f61b07f3908bff741f3bc946eda24bd2.png"
-                    title={<>asdf<br/>記事タイトル</>}
-                    userIcon="/DummyAssets/Square/ama_1024.png"
-                    userName="User Name"
-                    date="6/14 (水)"
-                />
-                <BContexts_Def
-                    image="/DummyAssets/f61b07f3908bff741f3bc946eda24bd2.png"
-                    title={<>asdf<br/>記事タイトル</>}
-                    userIcon="/DummyAssets/Square/ama_1024.png"
-                    userName="User Name"
-                    date="6/14 (水)"
-                />
-                <BContexts_Def
-                    image="/DummyAssets/f61b07f3908bff741f3bc946eda24bd2.png"
-                    title={<>asdf<br/>記事タイトル</>}
-                    userIcon="/DummyAssets/Square/ama_1024.png"
-                    userName="User Name"
-                    date="6/14 (水)"
-                />
-                <BContexts_Def
-                    image="/DummyAssets/f61b07f3908bff741f3bc946eda24bd2.png"
-                    title={<>asdf<br/>記事タイトル</>}
-                    userIcon="/DummyAssets/Square/ama_1024.png"
-                    userName="User Name"
-                    date="6/14 (水)"
-                />
+                {props.contents}
             </Contexts>
         </Banner>
     )

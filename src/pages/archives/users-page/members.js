@@ -109,7 +109,7 @@ export default function Archives_User_Members() {
                   top="5px"
                   left="-10px"
                   scale="2.3"
-                  title={"Name"}
+                  title={"カリン"}
                   color={"#DAF6FF"}
                 />
                 <Contexts_Portrait
@@ -117,18 +117,18 @@ export default function Archives_User_Members() {
                   image={"/DummyAssets/Portrait/mil.png"}
                   top="0px"
                   scale="1"
-                  title={"なまえ"}
+                  title={"ミルク"}
                   color={"#FF8787"}
                   fOpacity="0.4"
                 />
                 <Contexts_Portrait
-                  bg={"/DummyAssets/Back/2e26027670615a6732f11ba40f040f6f.png"}
-                  image={"/DummyAssets/Portrait/kar.png"}
-                  top="5px"
-                  left="-10px"
-                  scale="2.3"
-                  title={"Nameなまえ"}
-                  color={"#DAF6FF"}
+                  bg={"/DummyAssets/Back/b180e54c865ddbb492335c224813f0f7.png"}
+                  image={"/DummyAssets/Portrait/ama.png"}
+                  top="155px"
+                  left="15px"
+                  scale="1.9"
+                  title={"あまなつ"}
+                  color={"#0094FF"}
                 />
                 <Contexts_Portrait
                   bg={"/DummyAssets/Back/2e26027670615a6732f11ba40f040f6f.png"}

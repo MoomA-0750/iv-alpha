@@ -6,6 +6,8 @@ import { BannerSlide } from '@/components/Assets/Banner/BannerSlide'
 import { ListWrapper } from '@/components/Assets/List/ListWrapper'
 import { Contexts_Def } from '@/components/Assets/List/Contexts/Contexts_Def'
 import { SVG_book, SVG_calendar, SVG_guide_board } from '@/components/IconPack'
+import { MbMediaControl } from '@/components/MenuBar/MediaControl'
+import { BContexts_Def } from '@/components/Assets/Banner/Contexts/BContexts_Def'
 
 const MainContents = styled.div`
   max-width: 1020px;
@@ -41,14 +43,46 @@ export default function Home() {
       <main>
         <div className='wallpaper'/>
         <SideBar />
-        <MenuBar title={"ホーム"} />
+        <MenuBar title={"ホーム"}/>
         <MainContents>
           <Top>
             <Title>
               <div className='t-Max-Bolder'>IdolVerse</div>
               <div className='t-SubMax-Regular tC-TextSub'>Working in Progress...</div>
             </Title>
-            <BannerSlide title={"最近の出来事"} />
+            <BannerSlide
+              title={"最近の出来事"}
+              contents={<>
+                <BContexts_Def
+                    image="/DummyAssets/f61b07f3908bff741f3bc946eda24bd2.png"
+                    title={<>asdf<br/>記事タイトル</>}
+                    userIcon="/DummyAssets/Square/ama_1024.png"
+                    userName="User Name"
+                    date="6/14 (水)"
+                />
+                <BContexts_Def
+                    image="/DummyAssets/f61b07f3908bff741f3bc946eda24bd2.png"
+                    title={<>asdf<br/>記事タイトル</>}
+                    userIcon="/DummyAssets/Square/ama_1024.png"
+                    userName="User Name"
+                    date="6/14 (水)"
+                />
+                <BContexts_Def
+                    image="/DummyAssets/f61b07f3908bff741f3bc946eda24bd2.png"
+                    title={<>asdf<br/>記事タイトル</>}
+                    userIcon="/DummyAssets/Square/ama_1024.png"
+                    userName="User Name"
+                    date="6/14 (水)"
+                />
+                <BContexts_Def
+                    image="/DummyAssets/f61b07f3908bff741f3bc946eda24bd2.png"
+                    title={<>asdf<br/>記事タイトル</>}
+                    userIcon="/DummyAssets/Square/ama_1024.png"
+                    userName="User Name"
+                    date="6/14 (水)"
+                />
+              </>}
+            />
             <ListWrapper
               title={"クイックアクセス"}
               column={"3"}

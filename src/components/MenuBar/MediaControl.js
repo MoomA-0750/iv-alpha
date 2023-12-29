@@ -26,9 +26,12 @@ const Title = styled.div`
 `
 
 const Artwork = styled.div`
+    position: relative;
     width: 30px;
-    height: 30px;
     border-radius: 2px;
+    aspect-ratio: 1 / 1;
+    display: grid;
+    align-items: center;
     overflow: hidden;
 `
 
@@ -73,14 +76,11 @@ export function MbMediaControl() {
                 <SubTitle className='t-SubText-Normal tC-TextSub'>Artists</SubTitle>
             </MediaInfo>
             <Artwork>
-                <div style={{position: 'relative'}}>
-                    <Image style={{position: 'absolute', top: '-14px', left: '-6px'}}
-                        src="/DummyAssets/f61b07f3908bff741f3bc946eda24bd2.png"
-                        width={79.688}
-                        height={45}
-                        alt='Artwork'
-                    />
-                </div>
+                <Image style={{objectFit: "cover"}}
+                    src="/DummyAssets/Square/rusk_1024.png"
+                    layout="fill"
+                    alt='Artwork'
+                />
             </Artwork>
             <Buttons>
                 <Back className='bC-BG e-Button'><SVG_Media_Back size={9.75}/></Back>
