@@ -59,7 +59,7 @@ export function SideBar() {
                     <>
                         <Contexts_SideBar
                             svg={<SVG_calendar size={30} />}
-                            label={<><span>イベント</span><br/><span>カレンダー</span></>}
+                            label={<>イベント<br/>カレンダー</>}
                         />
                         <Contexts_SideBar
                             svg={<SVG_people_community_24 size={30} />}

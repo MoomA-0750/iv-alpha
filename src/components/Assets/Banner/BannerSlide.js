@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import styled from 'styled-components';
+import { BContexts_Def } from './Contexts/BContexts_Def';
 
 const Banner = styled.div`
     width: 100%;
@@ -75,6 +76,7 @@ export function BannerSlide(props) {
         <Banner>
             <div className='t-BlockTitle-Bolder'>{props.title}</div>
             <Contexts>
+                <BContexts_Def/>
                 <Frame className='e-Button'>
                     <div style={{position: 'relative'}}>
                         <Image style={{position: 'absolute'}}
