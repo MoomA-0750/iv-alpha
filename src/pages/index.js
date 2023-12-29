@@ -2,7 +2,7 @@ import { MenuBar } from '@/components/MenuBar/MenuBar'
 import { SideBar } from '@/components/SideBar/SideBar'
 import Head from 'next/head'
 import styled from 'styled-components'
-import { BannerSlide } from '@/components/Assets/BannerSlide'
+import { BannerSlide } from '@/components/Assets/Banner/BannerSlide'
 import { ListWrapper } from '@/components/Assets/List/ListWrapper'
 import { Contexts_Def } from '@/components/Assets/List/Contexts/Contexts_Def'
 import { SVG_book, SVG_calendar, SVG_guide_board } from '@/components/IconPack'
@@ -41,7 +41,7 @@ export default function Home() {
       <main>
         <div className='wallpaper'/>
         <SideBar />
-        <MenuBar subtitle={"WiP"} title={"IdolVerse"} />
+        <MenuBar title={"ホーム"} />
         <MainContents>
           <Top>
             <Title>

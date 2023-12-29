@@ -79,17 +79,17 @@ export default function Archives_User_Members() {
                     <MbContextMenu_Context
                       selected={false}
                       text={"イベント"}
-                      link={"/archives/users-page/top"}
+                      link={"/archives/users-page/events"}
                     />
                     <MbContextMenu_Context
                       selected={false}
                       text={"リリース"}
-                      link={"/archives/users-page/top"}
+                      link={"/archives/users-page/releases"}
                     />
                     <MbContextMenu_Context
                       selected={false}
                       text={"ログ"}
-                      link={"/archives/users-page/top"}
+                      link={"/archives/users-page/log"}
                     />
                   </>
                 }

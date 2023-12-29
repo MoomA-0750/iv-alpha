@@ -1,12 +1,15 @@
-import Link from 'next/link';
+    import Link from 'next/link';
 import styled from 'styled-components';
 import { SVG_search_24, SVG_people_checkmark_24, SVG_calendar, SVG_people_community_24, SVG_book } from '../IconPack';
+import { ListWrapper } from '../Assets/List/ListWrapper';
+import { Contexts_SideBar } from './Contexts_SideBar';
 
 const SideBarBody = styled.div`
     position: fixed;
     top: 0;
     left: 0;
     display: flex;
+    width: 80px;
     height: 100%;
     margin: 20px;
     flex-direction: column;
@@ -14,17 +17,6 @@ const SideBarBody = styled.div`
     align-items: center;
     gap: 10px;
     z-index: 100;
-`
-
-const ContextMenu = styled.div`
-    display: flex;
-    width: 80px;
-    padding: 10px 0;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    border-radius: 20px;
 `
 
 const Context = styled.div`
@@ -44,32 +36,43 @@ const Label = styled.div`
 export function SideBar() {
     return (
         <SideBarBody>
-            <ContextMenu className='bC-BGSub e-Box'>
-                <Context className='bC-BG e-Button'>
-                    <SVG_search_24 size={30} />
-                    <Label className='tC-Text t-10pxNormal'>検索</Label>
-                </Context>
-                <Context className='bC-BG e-Button'>
-                    <SVG_people_checkmark_24 size={30} />
-                    <Label className='tC-Text t-10pxNormal'>フォロー中</Label>
-                </Context>
-            </ContextMenu>
-            <ContextMenu className='bC-BGSub e-Box'>
-                <Context className='bC-BG e-Button'>
-                    <SVG_calendar size={30} />
-                    <Label className='tC-Text t-10pxNormal'>イベント<br/>カレンダー</Label>
-                </Context>
-                <Context className='bC-BG e-Button'>
-                    <SVG_people_community_24 size={30} />
-                    <Label className='tC-Text t-10pxNormal'>コミュニティ</Label>
-                </Context>
-                <Link href={"/archives/mainlist"}>
-                    <Context className='bC-BG e-Button'>
-                        <SVG_book size={30} />
-                        <Label className='tC-Text t-10pxNormal'>アーカイブ</Label>
-                    </Context>
-                </Link>
-            </ContextMenu>
+            <ListWrapper
+                column="1"
+                gap="10px"
+                Contexts={
+                    <>
+                        <Contexts_SideBar
+                            svg={<SVG_search_24 size={30} />}
+                            label={"検索"}
+                        />
+                        <Contexts_SideBar
+                            svg={<SVG_people_checkmark_24 size={30} />}
+                            label={"フォロー中"}
+                        />
+                    </>
+                }
+            />
+            <ListWrapper
+                column="1"
+                gap="10px"
+                Contexts={
+                    <>
+                        <Contexts_SideBar
+                            svg={<SVG_calendar size={30} />}
+                            label={<>イベント<br/>カレンダー</>}
+                        />
+                        <Contexts_SideBar
+                            svg={<SVG_people_community_24 size={30} />}
+                            label={"コミュニティ"}
+                        />
+                        <Contexts_SideBar
+                            svg={<SVG_book size={30} />}
+                            label={"アーカイブ"}
+                            link={"/archives/mainlist"}
+                        />
+                        </>
+                    }
+            />
         </SideBarBody>
     );
 }
