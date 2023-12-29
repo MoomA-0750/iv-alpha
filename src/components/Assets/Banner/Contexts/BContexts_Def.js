@@ -53,9 +53,12 @@ const UserInfo = styled.div`
 `
 
 const UserIcon = styled.div`
+    position: relative;
     width: 16px;
-    height: 16px;
     border-radius: 20px;
+    aspect-ratio: 1 / 1;
+    display: grid;
+    align-items: center;
     overflow: hidden;
 `
 
@@ -66,32 +69,28 @@ export function BContexts_Def(props) {
                 <div style={{position: 'relative', height:"100%"}}>
                     <Image style={{position: 'absolute', objectFit: "cover"}}
                         layout="fill"
-                        src="/DummyAssets/f61b07f3908bff741f3bc946eda24bd2.png"
+                        src={props.image}
                         alt='Artwork'
                     />
                     <DarkGradient/>
                 </div>
                 <TextBox>
                     <div className='t-BlockTitle-Bolder tC-fff e-Context-Highlight'>
-                        asdf<br/>記事タイトルほげほげa
+                        {props.title}
                     </div>
                     <Info>
                         <UserInfo>
                             <UserIcon>
-                            <div style={{position: 'relative'}}>
-                                <Image style={{position: 'absolute', left: '-5px'}}
-                                    src="/DummyAssets/112a843d79954b04cfbb8b38530639a5.png"
-                                    width={42.667}
-                                    height={24}
+                                <Image style={{objectFit: "cover"}}
+                                    src={props.userIcon}
+                                    layout="fill"
                                     alt='Artwork'
                                 />
-                                <DarkGradient style={{position: 'absolute'}} />
-                            </div>
                             </UserIcon>
-                            <div className='t-SubText2-Normal tC-fff e-Context-Highlight'>User Name</div>
+                            <div className='t-SubText2-Normal tC-fff e-Context-Highlight'>{props.userName}</div>
                         </UserInfo>
                         <Dot className='bC-BGSub'></Dot>
-                        <div className='t-SubText2-Normal tC-fff e-Context-Highlight'>6/14 (水)</div>
+                        <div className='t-SubText2-Normal tC-fff e-Context-Highlight'>{props.date}</div>
                     </Info>
                 </TextBox>
             </FrameRel>

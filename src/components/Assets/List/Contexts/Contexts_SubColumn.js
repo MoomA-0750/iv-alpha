@@ -28,7 +28,6 @@ const IconShow = styled.div`
     aspect-ratio: 1 / 1;
     display: grid;
     align-items: center;
-    gap: 5px;
     overflow: hidden;
 `;
 
@@ -44,10 +43,9 @@ export function Contexts_SubColumn(props) {
         <Link href={link}>
             <Frame className="bC-BG e-Button">
                 <Icon className="bC-BG e-Button">
-                    <Image
+                    <Image style={{objectFit: "cover"}}
                         layout="fill"
                         src={props.image}
-                        objectFit="cover"
                         alt='Picture'
                     />
                 </Icon>
