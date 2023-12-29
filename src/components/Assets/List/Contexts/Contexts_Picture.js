@@ -20,9 +20,9 @@ export function Contexts_Picture(props) {
         <Link href={link}>
             <Frame className="bC-BG e-Button">
                 <Image
+                    style={{objectFit: "cover"}}
                     layout="fill"
                     src={props.image}
-                    objectFit="cover"
                     alt='Picture'
                 />
             </Frame>
