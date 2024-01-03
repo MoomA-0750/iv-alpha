@@ -64,7 +64,6 @@ const Back = styled.div`
     width: 42px;
     justify-content: center;
     align-items: center;
-    gap: 10px;
     align-self: stretch;
     border-radius: 28px 5px 5px 28px;
 `
@@ -75,7 +74,6 @@ const Home = styled.div`
     height: 100%;
     justify-content: center;
     align-items: center;
-    gap: 10px;
     align-self: stretch;
     border-radius: 5px 28px 28px 5px;
 `

@@ -33,7 +33,7 @@ export function ListWrapper(props) {
   return (
     <Button>
       <div className="t-BlockTitle-Bolder tC-Text">{props.title}</div>
-      <TagWrapper></TagWrapper>
+      <TagWrapper>{props.Tags}</TagWrapper>
       <Contexts className="bC-BGSub e-Box" style={{gridTemplateColumns: `repeat(${props.column}, 1fr)`, gap: `${gap}`, borderRadius: `${borderRadius}`}}>
         {props.Contexts}
       </Contexts>

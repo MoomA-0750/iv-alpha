@@ -1,4 +1,5 @@
 import { Contexts_Event } from "@/components/Assets/List/Contexts/Contexts_Event";
+import { Contexts_Tag } from "@/components/Assets/List/Contexts/Contexts_Tag";
 import { ListWrapper } from "@/components/Assets/List/ListWrapper";
 import { MbContextMenu_Context } from "@/components/MenuBar/ContextMenu/Context";
 import { MbContextMenu } from "@/components/MenuBar/ContextMenu/ContextMenu";
@@ -94,18 +95,22 @@ return (
             />
             </>
         }
-        right={<>{/* <MbMediaControl/> */}</>}
         />
         <MainContents>
         <ListWrapper
             borderRadius="20px 35px 20px 20px"
             column="2"
+            Tags={
+                <>
+                    <Contexts_Tag/>
+                </>
+            }
             Contexts={
             <>
                 <Contexts_Event
                     image={"/DummyAssets/Back/2e26027670615a6732f11ba40f040f6f.png"}
                     userIcon="/DummyAssets/Square/ama_1024.png"
-                    userName="User to Join"
+                    userName="User Name"
                     date="4/1"
                     time="23:00"
                     title="Event Name"
@@ -115,7 +120,7 @@ return (
                 <Contexts_Event
                     image={"/DummyAssets/52e59d9a59265fac16a891cd33b98272.png"}
                     userIcon="/DummyAssets/Square/ama_1024.png"
-                    userName="User to Join"
+                    userName="User Name"
                     date="4/1"
                     time="23:00"
                     title="Event Name"
@@ -124,7 +129,7 @@ return (
                 <Contexts_Event
                     image={"/DummyAssets/112a843d79954b04cfbb8b38530639a5.png"}
                     userIcon="/DummyAssets/Square/ama_1024.png"
-                    userName="User to Join"
+                    userName="User Name"
                     date="4/1"
                     time="23:00"
                     title="Event Name"
@@ -134,7 +139,7 @@ return (
                 <Contexts_Event
                     image={"/DummyAssets/f61b07f3908bff741f3bc946eda24bd2.png"}
                     userIcon="/DummyAssets/Square/ama_1024.png"
-                    userName="User to Join"
+                    userName="User Name"
                     date="4/1"
                     time="23:00"
                     title="Event Name"
@@ -143,7 +148,7 @@ return (
                 <Contexts_Event
                     image={"/DummyAssets/52e59d9a59265fac16a891cd33b98272.png"}
                     userIcon="/DummyAssets/Square/ama_1024.png"
-                    userName="User to Join"
+                    userName="User Name"
                     date="4/1"
                     time="23:00"
                     title="Event Name"
@@ -152,7 +157,7 @@ return (
                 <Contexts_Event
                     image={"/DummyAssets/112a843d79954b04cfbb8b38530639a5.png"}
                     userIcon="/DummyAssets/Square/ama_1024.png"
-                    userName="User to Join"
+                    userName="User Name"
                     date="4/1"
                     time="23:00"
                     title="Event Name"

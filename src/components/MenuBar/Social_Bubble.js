@@ -21,14 +21,22 @@ const Button = styled.div`
     align-self: stretch;
     border-radius: 28px;
 `
+const ButtonSquare = styled.div`
+    display: flex;
+    aspect-ratio: 1 / 1;
+    border-radius: 28px;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+`
 
 export function Social_Bubble(props) {
     return (
         <Frame className='bC-BGSub e-Box'>
             <Button className='bC-BG e-Button t-Text-Bolder'>フォロー</Button>
-            <Button className='bC-BG e-Button t-Text-Bolder'><SVG_Social_X/></Button>
-            <Button className='bC-BG e-Button t-Text-Bolder'><SVG_Social_YouTube/></Button>
-            <Button className='bC-BG e-Button t-Text-Bolder'><SVG_Social_Booth/></Button>
+            <ButtonSquare className='bC-BG e-Button t-Text-Bolder'><SVG_Social_X/></ButtonSquare>
+            <ButtonSquare className='bC-BG e-Button t-Text-Bolder'><SVG_Social_YouTube/></ButtonSquare>
+            <ButtonSquare className='bC-BG e-Button t-Text-Bolder'><SVG_Social_Booth/></ButtonSquare>
         </Frame>
     )
 }
