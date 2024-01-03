@@ -2,7 +2,7 @@ import { SVG_dismiss_12 } from "@/components/IconPack";
 import Link from "next/link";
 import styled from "styled-components";
 
-const Frame = styled.div`
+const FrameDef = styled.div`
     height: 20px;
     padding: 5px 10px;
     display: flex;
@@ -12,26 +12,39 @@ const Frame = styled.div`
     overflow: hidden;
 `;
 
-const TextBox = styled.div`
+const FrameSelected = styled.div`
+    height: 20px;
+    padding: 5px 10px;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-start;
-    gap: 2px;
+    align-items: center;
+    gap: 7px;
+    border-radius: 15px;
+    overflow: hidden;
 `;
+
+const ButtonDef = styled.div`
+    display: none;
+`
+
+const ButtonSelected = styled.div`
+    height: 12px;
+    display:flex;
+    align-items: center;
+`
 
 export function Contexts_Tag(props) {
     const link = props.link || "/default-link";
+    const Frame = props.selected ? FrameSelected : FrameDef;
+    const Button = props.selected ? ButtonSelected : ButtonDef;
 
     return (
         <Link href={link}>
             <Frame className="bC-BG e-Button">
                 {props.svg}
-                <TextBox>
-                    {/* <div className="t-SubText2-Bolder">{props.title}</div> */}
-                    <div className="t-SubText2-Bolder">asdf</div>
-                    <SVG_dismiss_12 size="12" />
-                </TextBox>
+                <div className="t-SubText2-Bolder">asdf</div>
+                <Button>
+                    <SVG_dismiss_12 size="12"/>
+                </Button>
             </Frame>
         </Link>
     );
