@@ -102,6 +102,8 @@ return (
             column="2"
             Tags={
                 <>
+                    <Contexts_Tag selected="true"/>
+                    <Contexts_Tag/>
                     <Contexts_Tag/>
                 </>
             }

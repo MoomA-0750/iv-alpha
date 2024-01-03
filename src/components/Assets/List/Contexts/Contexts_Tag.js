@@ -10,6 +10,7 @@ const FrameDef = styled.div`
     gap: 7px;
     border-radius: 15px;
     overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.8);
 `;
 
 const FrameSelected = styled.div`
@@ -20,6 +21,7 @@ const FrameSelected = styled.div`
     gap: 7px;
     border-radius: 15px;
     overflow: hidden;
+    background-color: #DAF6FF;
 `;
 
 const ButtonDef = styled.div`
@@ -39,7 +41,7 @@ export function Contexts_Tag(props) {
 
     return (
         <Link href={link}>
-            <Frame className="bC-BG e-Button">
+            <Frame className="e-Button">
                 {props.svg}
                 <div className="t-SubText2-Bolder">asdf</div>
                 <Button>
