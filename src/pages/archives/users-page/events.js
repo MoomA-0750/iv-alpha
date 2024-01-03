@@ -102,9 +102,16 @@ return (
             column="2"
             Tags={
                 <>
-                    <Contexts_Tag selected="true"/>
-                    <Contexts_Tag/>
-                    <Contexts_Tag/>
+                    <Contexts_Tag
+                        selected="true"
+                        text="Tag 1"
+                    />
+                    <Contexts_Tag
+                        text="Tag 2"
+                    />
+                    <Contexts_Tag
+                        text="Tag 3"
+                    />
                 </>
             }
             Contexts={
