@@ -23,7 +23,7 @@ const Button = styled.div`
 `
 const ButtonSquare = styled.div`
     display: flex;
-    aspect-ratio: 1 / 1;
+    width: 42px;
     border-radius: 28px;
     justify-content: center;
     align-items: center;
