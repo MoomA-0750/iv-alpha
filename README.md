@@ -1,7 +1,7 @@
 #IdolVerse
 
 ```
-熱狂への宇宙船
+なななななな
 ```
 
 Now Building......
