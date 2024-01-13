@@ -21,7 +21,8 @@ const FrameSelected = styled.div`
     gap: 7px;
     border-radius: 15px;
     overflow: hidden;
-    background-color:#008ad4;
+    /* background-color:#008ad4; */
+    background-color:#CA6445;
 
     * {
         color: #FFF;
