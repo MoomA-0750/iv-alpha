@@ -108,7 +108,7 @@ export default function Archives_User_Log() {
             <MainContents>
                 <TitleBox>
                     <TextBox>
-                        <div class="t-FullScreen-Title">Under<br/>Construction...</div>
+                        <div class="t-FullScreen-Title">Under<br/>Construction......</div>
                     </TextBox>
                 </TitleBox>
             </MainContents>
