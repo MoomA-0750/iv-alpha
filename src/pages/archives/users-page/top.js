@@ -102,7 +102,7 @@ export default function Archives_User_Top() {
                 }
                 right={
                     <>
-                        <MbMediaControl/>
+                        {/* <MbMediaControl/> */}
                     </>
                 }
             />
